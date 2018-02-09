@@ -67,7 +67,7 @@ extension String {
     
     /// get a substring the normal way
     public func substring(_ start: Int, end: Int) -> String {
-        let r = self.characters.index(self.startIndex, offsetBy: start)..<self.characters.index(self.startIndex, offsetBy: end)
+        let r = self.index(self.startIndex, offsetBy: start)..<self.characters.index(self.startIndex, offsetBy: end)
         return self.substring(with: r)
     }
     

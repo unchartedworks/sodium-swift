@@ -1,4 +1,6 @@
 #!/bin/sh
-universalbuild -p ./Sodium.xcodeproj -s SodiumSwift -c Debug
-universalbuild -p ./Sodium.xcodeproj -s SwiftCommon -c Debug
-universalbuild -p ./Sodium.xcodeproj -s SwiftCommonIOS -c Debug
+config="Debug"
+universalbuild -p ./Sodium.xcodeproj -s SodiumSwift -c    $config
+universalbuild -p ./Sodium.xcodeproj -s SwiftCommon -c    $config
+universalbuild -p ./Sodium.xcodeproj -s SwiftCommonIOS -c $config
+universalbuild -p ./Sodium.xcodeproj -s SodiumCocoa -c    $config
