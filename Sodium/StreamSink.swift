@@ -22,7 +22,7 @@ open class StreamSink<T> : Stream<T>
      Construct a StreamSink that uses
      - Parameter fold: to combine values if `send` is called more than once per transaction.
      */
-    init(fold: @escaping (T,T) -> T, refs: MemReferences? = nil)
+    public init(fold: @escaping (T,T) -> T, refs: MemReferences? = nil)
     {
         self.fold = fold
         super.init(refs: refs)

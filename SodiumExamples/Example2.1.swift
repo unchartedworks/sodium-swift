@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Sodium
+import SodiumSwift
 import SodiumCocoa
 
 class Example21 : UIViewController {
@@ -21,29 +21,29 @@ class Example21 : UIViewController {
     override func viewDidLoad() {
         
         let clear = NAButton("Clear", refs: refs)
-        clear.frame = CGRectMake(50,30,100,30)
-        clear.setTitle("clear", forState: .Normal)
-        clear.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        clear.frame = CGRect(x: 50, y:30, width: 100, height: 30)
+        clear.setTitle("clear", for: .normal)
+        clear.setTitleColor(UIColor.blue, for: .normal)
         self.view.addSubview(clear)
-        
+
         //let sClearIt = clear.clicked.map { _ in "" }
-        let sClearIt = Stream<String>()
+        let sClearIt = SodiumSwift.Stream<String>()
         let text = NATextField(s: sClearIt, text: "Hello", refs: refs)
         text.text = "Hello2"
-        text.frame = CGRectMake(10,50,100,20)
+        text.frame = CGRect(x:10, y: 50, width:100, height: 20)
         
         self.view.addSubview(text)
         
         
         let close = UIButton()
-        close.frame = CGRectMake(50,130,100,30)
-        close.setTitle("close", forState: .Normal)
-        close.setTitleColor(UIColor.blueColor(), forState: .Normal)
-        close.addTarget(self, action: #selector(doclose), forControlEvents: .TouchUpInside)
+        close.frame = CGRect(x: 50, y:130, width: 100, height: 30)
+        close.setTitle("close", for: .normal)
+        close.setTitleColor(UIColor.blue, for: .normal)
+        close.addTarget(self, action: #selector(doclose), for: .touchUpInside)
         self.view.addSubview(close)
     }
 
     func doclose() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 }

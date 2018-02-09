@@ -49,7 +49,165 @@
 		05E3C6FB1CEFF53900BAFE1D /* SodiumCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6FA1CEFF53900BAFE1D /* SodiumCocoaTests.swift */; };
 		05E3C6FD1CEFF53900BAFE1D /* SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; };
 		05FE4C071CDD0C3B00108F68 /* StreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE4C061CDD0C3B00108F68 /* StreamTests.swift */; };
-		D77EAF7EB73DF715F0FA8FAC /* Pods_SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A87EBABA0ED0F82B3E13C3 /* Pods_SodiumCocoa.framework */; };
+		D86E78F33D7F260EDA960264 /* Pods_SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4795DBBCD119A6FB594C26EB /* Pods_SodiumCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EC2673361DE8DC2D0077F320 /* SwiftCommonIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC2673371DE8DC2D0077F320 /* SwiftCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC2673381DE8DC2D0077F320 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC2673391DE8DC360077F320 /* SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; };
+		EC26733A1DE8DC360077F320 /* SodiumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055B91CB1CD13D940048BC24 /* SodiumSwift.framework */; };
+		EC26733B1DE8DC4E0077F320 /* SodiumSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 055B91CB1CD13D940048BC24 /* SodiumSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC26733C1DE8DC4E0077F320 /* SodiumCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC288FF51F16227E000FB227 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
+		EC288FF61F16227E000FB227 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
+		EC288FF71F16227E000FB227 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
+		EC288FF81F16227E000FB227 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E51CD13DD10048BC24 /* Cell.swift */; };
+		EC288FF91F16227E000FB227 /* CellLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E81CD140150048BC24 /* CellLoop.swift */; };
+		EC288FFA1F16227E000FB227 /* CellSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E91CD140150048BC24 /* CellSink.swift */; };
+		EC288FFB1F16227E000FB227 /* CoalesceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EA1CD140150048BC24 /* CoalesceHandler.swift */; };
+		EC288FFC1F16227E000FB227 /* CompositeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EB1CD140150048BC24 /* CompositeListener.swift */; };
+		EC288FFD1F16227E000FB227 /* IKeepListenersAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EC1CD140150048BC24 /* IKeepListenersAlive.swift */; };
+		EC288FFE1F16227E000FB227 /* ListenerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91ED1CD140150048BC24 /* ListenerType.swift */; };
+		EC288FFF1F16227E000FB227 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C731CDA76DC0013C3E3 /* Lazy.swift */; };
+		EC2890001F16227E000FB227 /* LazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F01CD140150048BC24 /* LazyCell.swift */; };
+		EC2890011F16227E000FB227 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F21CD140150048BC24 /* Listener.swift */; };
+		EC2890021F16227E000FB227 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F21CEFE24900BAFE1D /* Memory.swift */; };
+		EC2890031F16227E000FB227 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F61CD140150048BC24 /* Node.swift */; };
+		EC2890041F16227E000FB227 /* Operational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F71CD140150048BC24 /* Operational.swift */; };
+		EC2890051F16227E000FB227 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92091CD140280048BC24 /* Stream.swift */; };
+		EC2890061F16227E000FB227 /* StreamLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920B1CD140280048BC24 /* StreamLoop.swift */; };
+		EC2890071F16227E000FB227 /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
+		EC2890081F16227E000FB227 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
+		EC2890091F16227E000FB227 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
+		EC28900C1F16227E000FB227 /* SodiumSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908D71DF869D10081B51E /* SodiumSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2890181F1624BE000FB227 /* NALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C680E81CFE237100B41A45 /* NALabel.swift */; };
+		EC2890191F1624BE000FB227 /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E81CEFC1E600BAFE1D /* NAButton.swift */; };
+		EC28901A1F1624BE000FB227 /* NATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057DB7411D2C259E005B6E32 /* NATableViewCell.swift */; };
+		EC28901B1F1624BE000FB227 /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E61CEFBDE400BAFE1D /* NATextField.swift */; };
+		EC28901F1F1624BE000FB227 /* SodiumCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E3C6E01CEFBDBB00BAFE1D /* SodiumCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2890291F162552000FB227 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
+		EC28902A1F162552000FB227 /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
+		EC28902B1F162552000FB227 /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
+		EC28902C1F162552000FB227 /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
+		EC28902D1F162552000FB227 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
+		EC28902E1F162552000FB227 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
+		EC28902F1F162552000FB227 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
+		EC2890301F162552000FB227 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
+		EC2890311F162552000FB227 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
+		EC2890341F162552000FB227 /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908971DF8662A0081B51E /* SwiftCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC28903D1F16260B000FB227 /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */; };
+		EC28903E1F16260B000FB227 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */; };
+		EC28903F1F16260B000FB227 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */; };
+		EC2890401F16260B000FB227 /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */; };
+		EC2890411F16260B000FB227 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */; };
+		EC2890421F16260B000FB227 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */; };
+		EC2890431F16260B000FB227 /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */; };
+		EC2890441F16260B000FB227 /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */; };
+		EC2890451F16260B000FB227 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C41DF8669A0081B51E /* UIView-Extension.swift */; };
+		EC2890461F16260B000FB227 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */; };
+		EC2890481F16260B000FB227 /* SwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7908951DF866290081B51E /* SwiftCommon.framework */; };
+		EC28904A1F16260B000FB227 /* SwiftCommonIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908B61DF866800081B51E /* SwiftCommonIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2890531F1626E4000FB227 /* Operational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F71CD140150048BC24 /* Operational.swift */; };
+		EC2890541F1626E4000FB227 /* IKeepListenersAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EC1CD140150048BC24 /* IKeepListenersAlive.swift */; };
+		EC2890551F1626E4000FB227 /* ListenerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91ED1CD140150048BC24 /* ListenerType.swift */; };
+		EC2890561F1626E4000FB227 /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F21CEFE24900BAFE1D /* Memory.swift */; };
+		EC2890571F1626E4000FB227 /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F21CD140150048BC24 /* Listener.swift */; };
+		EC2890581F1626E4000FB227 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92091CD140280048BC24 /* Stream.swift */; };
+		EC2890591F1626E4000FB227 /* CompositeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EB1CD140150048BC24 /* CompositeListener.swift */; };
+		EC28905A1F1626E4000FB227 /* LazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F01CD140150048BC24 /* LazyCell.swift */; };
+		EC28905B1F1626E4000FB227 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F61CD140150048BC24 /* Node.swift */; };
+		EC28905C1F1626E4000FB227 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
+		EC28905D1F1626E4000FB227 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
+		EC28905E1F1626E4000FB227 /* StreamLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920B1CD140280048BC24 /* StreamLoop.swift */; };
+		EC28905F1F1626E4000FB227 /* CellSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E91CD140150048BC24 /* CellSink.swift */; };
+		EC2890601F1626E4000FB227 /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
+		EC2890611F1626E4000FB227 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
+		EC2890621F1626E4000FB227 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E51CD13DD10048BC24 /* Cell.swift */; };
+		EC2890631F1626E4000FB227 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C731CDA76DC0013C3E3 /* Lazy.swift */; };
+		EC2890641F1626E4000FB227 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
+		EC2890651F1626E4000FB227 /* CellLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E81CD140150048BC24 /* CellLoop.swift */; };
+		EC2890661F1626E4000FB227 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
+		EC2890671F1626E4000FB227 /* CoalesceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EA1CD140150048BC24 /* CoalesceHandler.swift */; };
+		EC28906B1F1626E4000FB227 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 05DB911B1CEE7923006A7678 /* COPYING */; };
+		EC2890701F162809000FB227 /* SwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2890391F162552000FB227 /* SwiftCommon.framework */; };
+		EC2890711F162810000FB227 /* SwiftCommonIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */; };
+		EC3360841F1F5D6A00D6C3AE /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
+		EC3360851F1F5D6A00D6C3AE /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
+		EC3360861F1F5D6A00D6C3AE /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
+		EC3360871F1F5D6A00D6C3AE /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E51CD13DD10048BC24 /* Cell.swift */; };
+		EC3360881F1F5D6A00D6C3AE /* CellLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E81CD140150048BC24 /* CellLoop.swift */; };
+		EC3360891F1F5D6A00D6C3AE /* CellSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E91CD140150048BC24 /* CellSink.swift */; };
+		EC33608A1F1F5D6A00D6C3AE /* CoalesceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EA1CD140150048BC24 /* CoalesceHandler.swift */; };
+		EC33608B1F1F5D6A00D6C3AE /* CompositeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EB1CD140150048BC24 /* CompositeListener.swift */; };
+		EC33608C1F1F5D6A00D6C3AE /* IKeepListenersAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EC1CD140150048BC24 /* IKeepListenersAlive.swift */; };
+		EC33608D1F1F5D6A00D6C3AE /* ListenerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91ED1CD140150048BC24 /* ListenerType.swift */; };
+		EC33608E1F1F5D6A00D6C3AE /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C731CDA76DC0013C3E3 /* Lazy.swift */; };
+		EC33608F1F1F5D6A00D6C3AE /* LazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F01CD140150048BC24 /* LazyCell.swift */; };
+		EC3360901F1F5D6A00D6C3AE /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F21CD140150048BC24 /* Listener.swift */; };
+		EC3360911F1F5D6A00D6C3AE /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F21CEFE24900BAFE1D /* Memory.swift */; };
+		EC3360921F1F5D6A00D6C3AE /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F61CD140150048BC24 /* Node.swift */; };
+		EC3360931F1F5D6A00D6C3AE /* Operational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F71CD140150048BC24 /* Operational.swift */; };
+		EC3360941F1F5D6A00D6C3AE /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92091CD140280048BC24 /* Stream.swift */; };
+		EC3360951F1F5D6A00D6C3AE /* StreamLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920B1CD140280048BC24 /* StreamLoop.swift */; };
+		EC3360961F1F5D6A00D6C3AE /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
+		EC3360971F1F5D6A00D6C3AE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
+		EC3360981F1F5D6A00D6C3AE /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
+		EC3360A41F1F5E1100D6C3AE /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
+		EC3360A51F1F5E1100D6C3AE /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
+		EC3360A61F1F5E1100D6C3AE /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
+		EC3360A71F1F5E1100D6C3AE /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
+		EC3360A81F1F5E1100D6C3AE /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
+		EC3360A91F1F5E1100D6C3AE /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
+		EC3360AA1F1F5E1100D6C3AE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
+		EC3360AB1F1F5E1100D6C3AE /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
+		EC3360AC1F1F5E1100D6C3AE /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
+		EC3360D71F1F5FC700D6C3AE /* SodiumSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */; };
+		EC3360D81F1F5FCB00D6C3AE /* SodiumSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC3360DA1F1F606100D6C3AE /* SwiftCommon-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */; };
+		EC3360DB1F1F606400D6C3AE /* SwiftCommon-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7908991DF8662A0081B51E /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908971DF8662A0081B51E /* SwiftCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7908A61DF8666A0081B51E /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
+		EC7908A71DF8666A0081B51E /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
+		EC7908A81DF8666A0081B51E /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
+		EC7908A91DF8666A0081B51E /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
+		EC7908AA1DF8666A0081B51E /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
+		EC7908AB1DF8666A0081B51E /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
+		EC7908AC1DF8666A0081B51E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
+		EC7908AD1DF8666A0081B51E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
+		EC7908AE1DF8666A0081B51E /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
+		EC7908B81DF866800081B51E /* SwiftCommonIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908B61DF866800081B51E /* SwiftCommonIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7908C61DF8669A0081B51E /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */; };
+		EC7908C71DF8669A0081B51E /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */; };
+		EC7908C81DF8669A0081B51E /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */; };
+		EC7908C91DF8669A0081B51E /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */; };
+		EC7908CA1DF8669A0081B51E /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */; };
+		EC7908CB1DF8669A0081B51E /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */; };
+		EC7908CC1DF8669A0081B51E /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */; };
+		EC7908CD1DF8669A0081B51E /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */; };
+		EC7908CE1DF8669A0081B51E /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C41DF8669A0081B51E /* UIView-Extension.swift */; };
+		EC7908CF1DF8669A0081B51E /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */; };
+		EC7908D91DF869D10081B51E /* SodiumSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908D71DF869D10081B51E /* SodiumSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC7908DD1DF86A090081B51E /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
+		EC7908DE1DF86A090081B51E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
+		EC7908DF1DF86A090081B51E /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
+		EC7908E01DF86A090081B51E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E51CD13DD10048BC24 /* Cell.swift */; };
+		EC7908E11DF86A090081B51E /* CellLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E81CD140150048BC24 /* CellLoop.swift */; };
+		EC7908E21DF86A090081B51E /* CellSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E91CD140150048BC24 /* CellSink.swift */; };
+		EC7908E31DF86A090081B51E /* CoalesceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EA1CD140150048BC24 /* CoalesceHandler.swift */; };
+		EC7908E41DF86A090081B51E /* CompositeListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EB1CD140150048BC24 /* CompositeListener.swift */; };
+		EC7908E51DF86A090081B51E /* IKeepListenersAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EC1CD140150048BC24 /* IKeepListenersAlive.swift */; };
+		EC7908E61DF86A090081B51E /* ListenerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91ED1CD140150048BC24 /* ListenerType.swift */; };
+		EC7908E71DF86A090081B51E /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C731CDA76DC0013C3E3 /* Lazy.swift */; };
+		EC7908E81DF86A090081B51E /* LazyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F01CD140150048BC24 /* LazyCell.swift */; };
+		EC7908E91DF86A090081B51E /* Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F21CD140150048BC24 /* Listener.swift */; };
+		EC7908EA1DF86A090081B51E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F21CEFE24900BAFE1D /* Memory.swift */; };
+		EC7908EB1DF86A090081B51E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F61CD140150048BC24 /* Node.swift */; };
+		EC7908EC1DF86A090081B51E /* Operational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F71CD140150048BC24 /* Operational.swift */; };
+		EC7908ED1DF86A090081B51E /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92091CD140280048BC24 /* Stream.swift */; };
+		EC7908EE1DF86A090081B51E /* StreamLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920B1CD140280048BC24 /* StreamLoop.swift */; };
+		EC7908EF1DF86A090081B51E /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
+		EC7908F01DF86A090081B51E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
+		EC7908F11DF86A090081B51E /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
+		ECE106AD1EEED0D8005BE50A /* SwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7908951DF866290081B51E /* SwiftCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,20 +225,6 @@
 			remoteGlobalIDString = 055B91CA1CD13D940048BC24;
 			remoteInfo = Sodium;
 		};
-		05E3C6EC1CEFC2D500BAFE1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 05E3C6DD1CEFBDBB00BAFE1D;
-			remoteInfo = SodiumCocoa;
-		};
-		05E3C6EE1CEFC89E00BAFE1D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 055B91CA1CD13D940048BC24;
-			remoteInfo = Sodium;
-		};
 		05E3C6FE1CEFF53900BAFE1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
@@ -88,7 +232,46 @@
 			remoteGlobalIDString = 05E3C6DD1CEFBDBB00BAFE1D;
 			remoteInfo = SodiumCocoa;
 		};
+		EC26731D1DE8D8080077F320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055B91CA1CD13D940048BC24;
+			remoteInfo = Sodium;
+		};
+		EC2673221DE8D8170077F320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E3C6DD1CEFBDBB00BAFE1D;
+			remoteInfo = SodiumCocoa;
+		};
+		EC2890151F1624BE000FB227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055B91CA1CD13D940048BC24;
+			remoteInfo = Sodium;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC26731F1DE8D8080077F320 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC26733B1DE8DC4E0077F320 /* SodiumSwift.framework in Embed Frameworks */,
+				EC26733C1DE8DC4E0077F320 /* SodiumCocoa.framework in Embed Frameworks */,
+				EC2673361DE8DC2D0077F320 /* SwiftCommonIOS.framework in Embed Frameworks */,
+				EC2673371DE8DC2D0077F320 /* SwiftCommon.framework in Embed Frameworks */,
+				EC2673381DE8DC2D0077F320 /* (null) in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		055B91CB1CD13D940048BC24 /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,9 +323,60 @@
 		05E3C6FA1CEFF53900BAFE1D /* SodiumCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumCocoaTests.swift; sourceTree = "<group>"; };
 		05E3C6FC1CEFF53900BAFE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FE4C061CDD0C3B00108F68 /* StreamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTests.swift; sourceTree = "<group>"; };
-		1CF28E6F672C95B7D831455D /* Pods-SodiumCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.debug.xcconfig"; sourceTree = "<group>"; };
-		37A87EBABA0ED0F82B3E13C3 /* Pods_SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB7E3A4F1F0503FDF2A7E7F9 /* Pods-SodiumCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.release.xcconfig"; sourceTree = "<group>"; };
+		19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		4795DBBCD119A6FB594C26EB /* Pods_SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.release.xcconfig"; sourceTree = "<group>"; };
+		EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommon.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCommon/SwiftCommon.framework"; sourceTree = "<group>"; };
+		EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommonIOS.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCommonIOS/SwiftCommonIOS.framework"; sourceTree = "<group>"; };
+		EC2890111F16227E000FB227 /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2890121F16227E000FB227 /* SodiumSwift copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy-Info.plist"; sourceTree = "<absolute>"; };
+		EC2890251F1624BE000FB227 /* SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2890261F1624BE000FB227 /* SodiumCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumCocoa copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
+		EC2890391F162552000FB227 /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC28903A1F162553000FB227 /* SwiftCommon copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommon copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommon copy-Info.plist"; sourceTree = "<absolute>"; };
+		EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommonIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2890501F16260B000FB227 /* SwiftCommonIOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommonIOS copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommonIOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		EC28906F1F1626E4000FB227 /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3360A01F1F5D6A00D6C3AE /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3360A11F1F5D6A00D6C3AE /* SodiumSwift copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy2-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy2-Info.plist"; sourceTree = "<absolute>"; };
+		EC3360B41F1F5E1100D6C3AE /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3360B51F1F5E1100D6C3AE /* SwiftCommon copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommon copy2-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommon copy2-Info.plist"; sourceTree = "<absolute>"; };
+		EC3360D51F1F5E6E00D6C3AE /* SodiumSwift copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy3-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy3-Info.plist"; sourceTree = "<absolute>"; };
+		EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SodiumSwift-macOS.h"; sourceTree = "<group>"; };
+		EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftCommon-macOS.h"; sourceTree = "<group>"; };
+		EC79088A1DF8659E0081B51E /* SwiftCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommon.h; sourceTree = "<group>"; };
+		EC79088B1DF8659E0081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7908951DF866290081B51E /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7908971DF8662A0081B51E /* SwiftCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommon.h; sourceTree = "<group>"; };
+		EC7908981DF8662A0081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC79089D1DF8666A0081B51E /* Array-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Array-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Array-Extension.swift"; sourceTree = "<group>"; };
+		EC79089E1DF8666A0081B51E /* Bool-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bool-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Bool-Extension.swift"; sourceTree = "<group>"; };
+		EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGRect-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/CGRect-Extension.swift"; sourceTree = "<group>"; };
+		EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGSize-Extenstion.swift"; path = "Pods/SwiftCommon/SwiftCommon/CGSize-Extenstion.swift"; sourceTree = "<group>"; };
+		EC7908A11DF8666A0081B51E /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Date-Extension.swift"; sourceTree = "<group>"; };
+		EC7908A21DF8666A0081B51E /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Pods/SwiftCommon/SwiftCommon/Dispatch.swift; sourceTree = "<group>"; };
+		EC7908A31DF8666A0081B51E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Pods/SwiftCommon/SwiftCommon/Event.swift; sourceTree = "<group>"; };
+		EC7908A41DF8666A0081B51E /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/String-Extension.swift"; sourceTree = "<group>"; };
+		EC7908A51DF8666A0081B51E /* URL-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "URL-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/URL-Extension.swift"; sourceTree = "<group>"; };
+		EC7908B41DF866800081B51E /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommonIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7908B61DF866800081B51E /* SwiftCommonIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommonIOS.h; sourceTree = "<group>"; };
+		EC7908B71DF866800081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIApplication-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIApplication-Extension.swift"; sourceTree = "<group>"; };
+		EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIButton-Extension.swift"; sourceTree = "<group>"; };
+		EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIColor-Extension.swift"; sourceTree = "<group>"; };
+		EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIFont-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIImage-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UILabel-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableView-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UITableView-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableViewCell-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UITableViewCell-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C41DF8669A0081B51E /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIView-Extension.swift"; sourceTree = "<group>"; };
+		EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		EC7908D51DF869D10081B51E /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7908D71DF869D10081B51E /* SodiumSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SodiumSwift.h; sourceTree = "<group>"; };
+		EC7908D81DF869D10081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE106AE1EEED0ED005BE50A /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommonIOS.framework; path = "../../../Library/Developer/Xcode/DerivedData/Sodium-ckmrzxdvwfmnebfzgggstosvqkfp/Build/Products/Debug-iphoneos/SwiftCommonIOS/SwiftCommonIOS.framework"; sourceTree = "<group>"; };
+		ECF63DEA1DF88CE4001EA910 /* SodiumCocoa-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SodiumCocoa-tvOS.h"; sourceTree = "<group>"; };
+		ECF63DEB1DF88CE4001EA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +399,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2673391DE8DC360077F320 /* SodiumCocoa.framework in Frameworks */,
+				EC26733A1DE8DC360077F320 /* SodiumSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +408,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77EAF7EB73DF715F0FA8FAC /* Pods_SodiumCocoa.framework in Frameworks */,
+				D86E78F33D7F260EDA960264 /* Pods_SodiumCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,13 +420,90 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC28900A1F16227E000FB227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28901C1F1624BE000FB227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890711F162810000FB227 /* SwiftCommonIOS.framework in Frameworks */,
+				EC2890701F162809000FB227 /* SwiftCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890321F162552000FB227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890471F16260B000FB227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890481F16260B000FB227 /* SwiftCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890681F1626E4000FB227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360991F1F5D6A00D6C3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360AD1F1F5E1100D6C3AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908911DF866290081B51E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908B01DF866800081B51E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECE106AD1EEED0D8005BE50A /* SwiftCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908D11DF869D10081B51E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		04E8560DD0104DEB01BF3ABE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37A87EBABA0ED0F82B3E13C3 /* Pods_SodiumCocoa.framework */,
+				ECE106AE1EEED0ED005BE50A /* SwiftCommonIOS.framework */,
+				EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */,
+				EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */,
+				4795DBBCD119A6FB594C26EB /* Pods_SodiumCocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,14 +511,45 @@
 		055B91C11CD13D940048BC24 = {
 			isa = PBXGroup;
 			children = (
+				EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */,
+				EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */,
+				EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */,
+				EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */,
+				EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */,
+				EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */,
+				EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */,
+				EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */,
+				EC7908C41DF8669A0081B51E /* UIView-Extension.swift */,
+				EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */,
+				EC79089D1DF8666A0081B51E /* Array-Extension.swift */,
+				EC79089E1DF8666A0081B51E /* Bool-Extension.swift */,
+				EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */,
+				EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */,
+				EC7908A11DF8666A0081B51E /* Date-Extension.swift */,
+				EC7908A21DF8666A0081B51E /* Dispatch.swift */,
+				EC7908A31DF8666A0081B51E /* Event.swift */,
+				EC7908A41DF8666A0081B51E /* String-Extension.swift */,
+				EC7908A51DF8666A0081B51E /* URL-Extension.swift */,
 				055B91CD1CD13D940048BC24 /* Sodium */,
 				055B91D91CD13D950048BC24 /* SodiumTests */,
 				05E3C6C61CEFBD1B00BAFE1D /* SodiumExamples */,
 				05E3C6DF1CEFBDBB00BAFE1D /* SodiumCocoa */,
 				05E3C6F91CEFF53900BAFE1D /* SodiumCocoaTests */,
+				EC7908891DF8659E0081B51E /* SwiftCommon */,
+				EC7908961DF8662A0081B51E /* SwiftCommon */,
+				EC7908B51DF866800081B51E /* SwiftCommonIOS */,
+				EC7908D61DF869D10081B51E /* SodiumSwift */,
+				ECF63DE91DF88CE4001EA910 /* SodiumCocoa-tvOS */,
 				055B91CC1CD13D940048BC24 /* Products */,
-				DF8788B2453C7EC178BB1B61 /* Pods */,
 				04E8560DD0104DEB01BF3ABE /* Frameworks */,
+				9C960D6A5ABBE9A84CAB45F5 /* Pods */,
+				EC2890121F16227E000FB227 /* SodiumSwift copy-Info.plist */,
+				EC2890261F1624BE000FB227 /* SodiumCocoa copy-Info.plist */,
+				EC28903A1F162553000FB227 /* SwiftCommon copy-Info.plist */,
+				EC2890501F16260B000FB227 /* SwiftCommonIOS copy-Info.plist */,
+				EC3360A11F1F5D6A00D6C3AE /* SodiumSwift copy2-Info.plist */,
+				EC3360B51F1F5E1100D6C3AE /* SwiftCommon copy2-Info.plist */,
+				EC3360D51F1F5E6E00D6C3AE /* SodiumSwift copy3-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +561,16 @@
 				05E3C6C51CEFBD1B00BAFE1D /* SodiumExamples.app */,
 				05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */,
 				05E3C6F81CEFF53900BAFE1D /* SodiumCocoaTests.xctest */,
+				EC7908951DF866290081B51E /* SwiftCommon.framework */,
+				EC7908B41DF866800081B51E /* SwiftCommonIOS.framework */,
+				EC7908D51DF869D10081B51E /* SodiumSwift.framework */,
+				EC2890111F16227E000FB227 /* SodiumSwift.framework */,
+				EC2890251F1624BE000FB227 /* SodiumCocoa.framework */,
+				EC2890391F162552000FB227 /* SwiftCommon.framework */,
+				EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */,
+				EC28906F1F1626E4000FB227 /* Sodium.framework */,
+				EC3360A01F1F5D6A00D6C3AE /* SodiumSwift.framework */,
+				EC3360B41F1F5E1100D6C3AE /* SwiftCommon.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,13 +662,60 @@
 			path = SodiumCocoaTests;
 			sourceTree = "<group>";
 		};
-		DF8788B2453C7EC178BB1B61 /* Pods */ = {
+		9C960D6A5ABBE9A84CAB45F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CF28E6F672C95B7D831455D /* Pods-SodiumCocoa.debug.xcconfig */,
-				EB7E3A4F1F0503FDF2A7E7F9 /* Pods-SodiumCocoa.release.xcconfig */,
+				19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */,
+				7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC7908891DF8659E0081B51E /* SwiftCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EC79088A1DF8659E0081B51E /* SwiftCommon.h */,
+				EC79088B1DF8659E0081B51E /* Info.plist */,
+			);
+			path = SwiftCommon;
+			sourceTree = "<group>";
+		};
+		EC7908961DF8662A0081B51E /* SwiftCommon */ = {
+			isa = PBXGroup;
+			children = (
+				EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */,
+				EC7908971DF8662A0081B51E /* SwiftCommon.h */,
+				EC7908981DF8662A0081B51E /* Info.plist */,
+			);
+			path = SwiftCommon;
+			sourceTree = "<group>";
+		};
+		EC7908B51DF866800081B51E /* SwiftCommonIOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC7908B61DF866800081B51E /* SwiftCommonIOS.h */,
+				EC7908B71DF866800081B51E /* Info.plist */,
+			);
+			path = SwiftCommonIOS;
+			sourceTree = "<group>";
+		};
+		EC7908D61DF869D10081B51E /* SodiumSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */,
+				EC7908D71DF869D10081B51E /* SodiumSwift.h */,
+				EC7908D81DF869D10081B51E /* Info.plist */,
+			);
+			path = SodiumSwift;
+			sourceTree = "<group>";
+		};
+		ECF63DE91DF88CE4001EA910 /* SodiumCocoa-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				ECF63DEA1DF88CE4001EA910 /* SodiumCocoa-tvOS.h */,
+				ECF63DEB1DF88CE4001EA910 /* Info.plist */,
+			);
+			path = "SodiumCocoa-tvOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +733,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E3C6E11CEFBDBB00BAFE1D /* SodiumCocoa.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28900B1F16227E000FB227 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC28900C1F16227E000FB227 /* SodiumSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28901E1F1624BE000FB227 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC28901F1F1624BE000FB227 /* SodiumCocoa.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890331F162552000FB227 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890341F162552000FB227 /* SwiftCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890491F16260B000FB227 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC28904A1F16260B000FB227 /* SwiftCommonIOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890691F1626E4000FB227 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC33609A1F1F5D6A00D6C3AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3360D81F1F5FCB00D6C3AE /* SodiumSwift-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360AE1F1F5E1100D6C3AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3360DB1F1F606400D6C3AE /* SwiftCommon-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908921DF866290081B51E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908991DF8662A0081B51E /* SwiftCommon.h in Headers */,
+				EC3360DA1F1F606100D6C3AE /* SwiftCommon-macOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908B11DF866800081B51E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908B81DF866800081B51E /* SwiftCommonIOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908D21DF869D10081B51E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908D91DF869D10081B51E /* SodiumSwift.h in Headers */,
+				EC3360D71F1F5FC700D6C3AE /* SodiumSwift-macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,12 +863,13 @@
 				05E3C6C11CEFBD1B00BAFE1D /* Sources */,
 				05E3C6C21CEFBD1B00BAFE1D /* Frameworks */,
 				05E3C6C31CEFBD1B00BAFE1D /* Resources */,
+				EC26731F1DE8D8080077F320 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				05E3C6EF1CEFC89E00BAFE1D /* PBXTargetDependency */,
-				05E3C6ED1CEFC2D500BAFE1D /* PBXTargetDependency */,
+				EC26731E1DE8D8080077F320 /* PBXTargetDependency */,
+				EC2673231DE8D8170077F320 /* PBXTargetDependency */,
 			);
 			name = SodiumExamples;
 			productName = SodiumExamples;
@@ -397,12 +880,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05E3C6E31CEFBDBB00BAFE1D /* Build configuration list for PBXNativeTarget "SodiumCocoa" */;
 			buildPhases = (
-				C18EC22BFF4852CF21DBF85D /* [CP] Check Pods Manifest.lock */,
+				ACDC559188A8E5010F2B0907 /* [CP] Check Pods Manifest.lock */,
 				05E3C6D91CEFBDBB00BAFE1D /* Sources */,
 				05E3C6DA1CEFBDBB00BAFE1D /* Frameworks */,
 				05E3C6DB1CEFBDBB00BAFE1D /* Headers */,
 				05E3C6DC1CEFBDBB00BAFE1D /* Resources */,
-				3133F6987D96F78835A0499C /* [CP] Copy Pods Resources */,
+				94C3A814ACAC7122DDC711E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,6 +915,189 @@
 			productReference = 05E3C6F81CEFF53900BAFE1D /* SodiumCocoaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EC288FF31F16227E000FB227 /* SodiumSwift-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC28900E1F16227E000FB227 /* Build configuration list for PBXNativeTarget "SodiumSwift-tvOS" */;
+			buildPhases = (
+				EC288FF41F16227E000FB227 /* Sources */,
+				EC28900A1F16227E000FB227 /* Frameworks */,
+				EC28900B1F16227E000FB227 /* Headers */,
+				EC28900D1F16227E000FB227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SodiumSwift-tvOS";
+			productName = SodiumSwift;
+			productReference = EC2890111F16227E000FB227 /* SodiumSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC2890131F1624BE000FB227 /* SodiumCocoa-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2890221F1624BE000FB227 /* Build configuration list for PBXNativeTarget "SodiumCocoa-tvOS" */;
+			buildPhases = (
+				EC2890161F1624BE000FB227 /* [CP] Check Pods Manifest.lock */,
+				EC2890171F1624BE000FB227 /* Sources */,
+				EC28901C1F1624BE000FB227 /* Frameworks */,
+				EC28901E1F1624BE000FB227 /* Headers */,
+				EC2890201F1624BE000FB227 /* Resources */,
+				EC2890211F1624BE000FB227 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2890141F1624BE000FB227 /* PBXTargetDependency */,
+			);
+			name = "SodiumCocoa-tvOS";
+			productName = SodiumCocoa;
+			productReference = EC2890251F1624BE000FB227 /* SodiumCocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC2890271F162552000FB227 /* SwiftCommon-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2890361F162552000FB227 /* Build configuration list for PBXNativeTarget "SwiftCommon-tvOS" */;
+			buildPhases = (
+				EC2890281F162552000FB227 /* Sources */,
+				EC2890321F162552000FB227 /* Frameworks */,
+				EC2890331F162552000FB227 /* Headers */,
+				EC2890351F162552000FB227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftCommon-tvOS";
+			productName = SwiftCommon;
+			productReference = EC2890391F162552000FB227 /* SwiftCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC28903B1F16260B000FB227 /* SwiftCommonIOS-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC28904C1F16260B000FB227 /* Build configuration list for PBXNativeTarget "SwiftCommonIOS-tvOS" */;
+			buildPhases = (
+				EC28903C1F16260B000FB227 /* Sources */,
+				EC2890471F16260B000FB227 /* Frameworks */,
+				EC2890491F16260B000FB227 /* Headers */,
+				EC28904B1F16260B000FB227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftCommonIOS-tvOS";
+			productName = SwiftCommonIOS;
+			productReference = EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC2890511F1626E4000FB227 /* Sodium-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC28906C1F1626E4000FB227 /* Build configuration list for PBXNativeTarget "Sodium-tvOS" */;
+			buildPhases = (
+				EC2890521F1626E4000FB227 /* Sources */,
+				EC2890681F1626E4000FB227 /* Frameworks */,
+				EC2890691F1626E4000FB227 /* Headers */,
+				EC28906A1F1626E4000FB227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sodium-tvOS";
+			productName = Sodium;
+			productReference = EC28906F1F1626E4000FB227 /* Sodium.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC3360821F1F5D6A00D6C3AE /* SodiumSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC33609D1F1F5D6A00D6C3AE /* Build configuration list for PBXNativeTarget "SodiumSwift-macOS" */;
+			buildPhases = (
+				EC3360831F1F5D6A00D6C3AE /* Sources */,
+				EC3360991F1F5D6A00D6C3AE /* Frameworks */,
+				EC33609A1F1F5D6A00D6C3AE /* Headers */,
+				EC33609C1F1F5D6A00D6C3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SodiumSwift-macOS";
+			productName = SodiumSwift;
+			productReference = EC3360A01F1F5D6A00D6C3AE /* SodiumSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC3360A21F1F5E1100D6C3AE /* SwiftCommon-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC3360B11F1F5E1100D6C3AE /* Build configuration list for PBXNativeTarget "SwiftCommon-macOS" */;
+			buildPhases = (
+				EC3360A31F1F5E1100D6C3AE /* Sources */,
+				EC3360AD1F1F5E1100D6C3AE /* Frameworks */,
+				EC3360AE1F1F5E1100D6C3AE /* Headers */,
+				EC3360B01F1F5E1100D6C3AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftCommon-macOS";
+			productName = SwiftCommon;
+			productReference = EC3360B41F1F5E1100D6C3AE /* SwiftCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC7908941DF866290081B51E /* SwiftCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC79089A1DF8662A0081B51E /* Build configuration list for PBXNativeTarget "SwiftCommon" */;
+			buildPhases = (
+				EC7908901DF866290081B51E /* Sources */,
+				EC7908911DF866290081B51E /* Frameworks */,
+				EC7908921DF866290081B51E /* Headers */,
+				EC7908931DF866290081B51E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCommon;
+			productName = SwiftCommon;
+			productReference = EC7908951DF866290081B51E /* SwiftCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC7908B31DF866800081B51E /* SwiftCommonIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7908B91DF866800081B51E /* Build configuration list for PBXNativeTarget "SwiftCommonIOS" */;
+			buildPhases = (
+				EC7908AF1DF866800081B51E /* Sources */,
+				EC7908B01DF866800081B51E /* Frameworks */,
+				EC7908B11DF866800081B51E /* Headers */,
+				EC7908B21DF866800081B51E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCommonIOS;
+			productName = SwiftCommonIOS;
+			productReference = EC7908B41DF866800081B51E /* SwiftCommonIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC7908D41DF869D10081B51E /* SodiumSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7908DA1DF869D10081B51E /* Build configuration list for PBXNativeTarget "SodiumSwift" */;
+			buildPhases = (
+				EC7908D01DF869D10081B51E /* Sources */,
+				EC7908D11DF869D10081B51E /* Frameworks */,
+				EC7908D21DF869D10081B51E /* Headers */,
+				EC7908D31DF869D10081B51E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SodiumSwift;
+			productName = SodiumSwift;
+			productReference = EC7908D51DF869D10081B51E /* SodiumSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -444,8 +1110,7 @@
 				TargetAttributes = {
 					055B91CA1CD13D940048BC24 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = ND6GWCAG35;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 					055B91D41CD13D950048BC24 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -457,12 +1122,28 @@
 					};
 					05E3C6DD1CEFBDBB00BAFE1D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ND6GWCAG35;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 					};
 					05E3C6F71CEFF53900BAFE1D = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ND6GWCAG35;
+						LastSwiftMigration = 0810;
+					};
+					EC28903B1F16260B000FB227 = {
+						DevelopmentTeam = NA5BE2D52P;
+					};
+					EC7908941DF866290081B51E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					EC7908B31DF866800081B51E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NA5BE2D52P;
+						ProvisioningStyle = Automatic;
+					};
+					EC7908D41DF869D10081B51E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -484,6 +1165,16 @@
 				05E3C6C41CEFBD1B00BAFE1D /* SodiumExamples */,
 				05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */,
 				05E3C6F71CEFF53900BAFE1D /* SodiumCocoaTests */,
+				EC7908941DF866290081B51E /* SwiftCommon */,
+				EC7908B31DF866800081B51E /* SwiftCommonIOS */,
+				EC7908D41DF869D10081B51E /* SodiumSwift */,
+				EC288FF31F16227E000FB227 /* SodiumSwift-tvOS */,
+				EC2890131F1624BE000FB227 /* SodiumCocoa-tvOS */,
+				EC2890271F162552000FB227 /* SwiftCommon-tvOS */,
+				EC28903B1F16260B000FB227 /* SwiftCommonIOS-tvOS */,
+				EC2890511F1626E4000FB227 /* Sodium-tvOS */,
+				EC3360821F1F5D6A00D6C3AE /* SodiumSwift-macOS */,
+				EC3360A21F1F5E1100D6C3AE /* SwiftCommon-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -528,10 +1219,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC28900D1F16227E000FB227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890201F1624BE000FB227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890351F162552000FB227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28904B1F16260B000FB227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28906A1F1626E4000FB227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC28906B1F1626E4000FB227 /* COPYING in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC33609C1F1F5D6A00D6C3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360B01F1F5E1100D6C3AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908931DF866290081B51E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908B21DF866800081B51E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908D31DF869D10081B51E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3133F6987D96F78835A0499C /* [CP] Copy Pods Resources */ = {
+		94C3A814ACAC7122DDC711E7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,7 +1308,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C18EC22BFF4852CF21DBF85D /* [CP] Check Pods Manifest.lock */ = {
+		ACDC559188A8E5010F2B0907 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -558,7 +1320,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC2890161F1624BE000FB227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC2890211F1624BE000FB227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -634,6 +1426,211 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC288FF41F16227E000FB227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC288FF51F16227E000FB227 /* Array-Extension.swift in Sources */,
+				EC288FF61F16227E000FB227 /* String-Extension.swift in Sources */,
+				EC288FF71F16227E000FB227 /* PriorityQueue.swift in Sources */,
+				EC288FF81F16227E000FB227 /* Cell.swift in Sources */,
+				EC288FF91F16227E000FB227 /* CellLoop.swift in Sources */,
+				EC288FFA1F16227E000FB227 /* CellSink.swift in Sources */,
+				EC288FFB1F16227E000FB227 /* CoalesceHandler.swift in Sources */,
+				EC288FFC1F16227E000FB227 /* CompositeListener.swift in Sources */,
+				EC288FFD1F16227E000FB227 /* IKeepListenersAlive.swift in Sources */,
+				EC288FFE1F16227E000FB227 /* ListenerType.swift in Sources */,
+				EC288FFF1F16227E000FB227 /* Lazy.swift in Sources */,
+				EC2890001F16227E000FB227 /* LazyCell.swift in Sources */,
+				EC2890011F16227E000FB227 /* Listener.swift in Sources */,
+				EC2890021F16227E000FB227 /* Memory.swift in Sources */,
+				EC2890031F16227E000FB227 /* Node.swift in Sources */,
+				EC2890041F16227E000FB227 /* Operational.swift in Sources */,
+				EC2890051F16227E000FB227 /* Stream.swift in Sources */,
+				EC2890061F16227E000FB227 /* StreamLoop.swift in Sources */,
+				EC2890071F16227E000FB227 /* StreamSink.swift in Sources */,
+				EC2890081F16227E000FB227 /* Transaction.swift in Sources */,
+				EC2890091F16227E000FB227 /* Unit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890171F1624BE000FB227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890181F1624BE000FB227 /* NALabel.swift in Sources */,
+				EC2890191F1624BE000FB227 /* NAButton.swift in Sources */,
+				EC28901A1F1624BE000FB227 /* NATableViewCell.swift in Sources */,
+				EC28901B1F1624BE000FB227 /* NATextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890281F162552000FB227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890291F162552000FB227 /* Array-Extension.swift in Sources */,
+				EC28902A1F162552000FB227 /* Bool-Extension.swift in Sources */,
+				EC28902B1F162552000FB227 /* CGRect-Extension.swift in Sources */,
+				EC28902C1F162552000FB227 /* CGSize-Extenstion.swift in Sources */,
+				EC28902D1F162552000FB227 /* Date-Extension.swift in Sources */,
+				EC28902E1F162552000FB227 /* Dispatch.swift in Sources */,
+				EC28902F1F162552000FB227 /* Event.swift in Sources */,
+				EC2890301F162552000FB227 /* String-Extension.swift in Sources */,
+				EC2890311F162552000FB227 /* URL-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC28903C1F16260B000FB227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC28903D1F16260B000FB227 /* UIApplication-Extension.swift in Sources */,
+				EC28903E1F16260B000FB227 /* UIButton-Extension.swift in Sources */,
+				EC28903F1F16260B000FB227 /* UIColor-Extension.swift in Sources */,
+				EC2890401F16260B000FB227 /* UIFont-Extension.swift in Sources */,
+				EC2890411F16260B000FB227 /* UIImage-Extension.swift in Sources */,
+				EC2890421F16260B000FB227 /* UILabel-Extension.swift in Sources */,
+				EC2890431F16260B000FB227 /* UITableView-Extension.swift in Sources */,
+				EC2890441F16260B000FB227 /* UITableViewCell-Extension.swift in Sources */,
+				EC2890451F16260B000FB227 /* UIView-Extension.swift in Sources */,
+				EC2890461F16260B000FB227 /* UIViewController-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2890521F1626E4000FB227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2890531F1626E4000FB227 /* Operational.swift in Sources */,
+				EC2890541F1626E4000FB227 /* IKeepListenersAlive.swift in Sources */,
+				EC2890551F1626E4000FB227 /* ListenerType.swift in Sources */,
+				EC2890561F1626E4000FB227 /* Memory.swift in Sources */,
+				EC2890571F1626E4000FB227 /* Listener.swift in Sources */,
+				EC2890581F1626E4000FB227 /* Stream.swift in Sources */,
+				EC2890591F1626E4000FB227 /* CompositeListener.swift in Sources */,
+				EC28905A1F1626E4000FB227 /* LazyCell.swift in Sources */,
+				EC28905B1F1626E4000FB227 /* Node.swift in Sources */,
+				EC28905C1F1626E4000FB227 /* Array-Extension.swift in Sources */,
+				EC28905D1F1626E4000FB227 /* Transaction.swift in Sources */,
+				EC28905E1F1626E4000FB227 /* StreamLoop.swift in Sources */,
+				EC28905F1F1626E4000FB227 /* CellSink.swift in Sources */,
+				EC2890601F1626E4000FB227 /* StreamSink.swift in Sources */,
+				EC2890611F1626E4000FB227 /* String-Extension.swift in Sources */,
+				EC2890621F1626E4000FB227 /* Cell.swift in Sources */,
+				EC2890631F1626E4000FB227 /* Lazy.swift in Sources */,
+				EC2890641F1626E4000FB227 /* Unit.swift in Sources */,
+				EC2890651F1626E4000FB227 /* CellLoop.swift in Sources */,
+				EC2890661F1626E4000FB227 /* PriorityQueue.swift in Sources */,
+				EC2890671F1626E4000FB227 /* CoalesceHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360831F1F5D6A00D6C3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3360841F1F5D6A00D6C3AE /* Array-Extension.swift in Sources */,
+				EC3360851F1F5D6A00D6C3AE /* String-Extension.swift in Sources */,
+				EC3360861F1F5D6A00D6C3AE /* PriorityQueue.swift in Sources */,
+				EC3360871F1F5D6A00D6C3AE /* Cell.swift in Sources */,
+				EC3360881F1F5D6A00D6C3AE /* CellLoop.swift in Sources */,
+				EC3360891F1F5D6A00D6C3AE /* CellSink.swift in Sources */,
+				EC33608A1F1F5D6A00D6C3AE /* CoalesceHandler.swift in Sources */,
+				EC33608B1F1F5D6A00D6C3AE /* CompositeListener.swift in Sources */,
+				EC33608C1F1F5D6A00D6C3AE /* IKeepListenersAlive.swift in Sources */,
+				EC33608D1F1F5D6A00D6C3AE /* ListenerType.swift in Sources */,
+				EC33608E1F1F5D6A00D6C3AE /* Lazy.swift in Sources */,
+				EC33608F1F1F5D6A00D6C3AE /* LazyCell.swift in Sources */,
+				EC3360901F1F5D6A00D6C3AE /* Listener.swift in Sources */,
+				EC3360911F1F5D6A00D6C3AE /* Memory.swift in Sources */,
+				EC3360921F1F5D6A00D6C3AE /* Node.swift in Sources */,
+				EC3360931F1F5D6A00D6C3AE /* Operational.swift in Sources */,
+				EC3360941F1F5D6A00D6C3AE /* Stream.swift in Sources */,
+				EC3360951F1F5D6A00D6C3AE /* StreamLoop.swift in Sources */,
+				EC3360961F1F5D6A00D6C3AE /* StreamSink.swift in Sources */,
+				EC3360971F1F5D6A00D6C3AE /* Transaction.swift in Sources */,
+				EC3360981F1F5D6A00D6C3AE /* Unit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3360A31F1F5E1100D6C3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3360A41F1F5E1100D6C3AE /* Array-Extension.swift in Sources */,
+				EC3360A51F1F5E1100D6C3AE /* Bool-Extension.swift in Sources */,
+				EC3360A61F1F5E1100D6C3AE /* CGRect-Extension.swift in Sources */,
+				EC3360A71F1F5E1100D6C3AE /* CGSize-Extenstion.swift in Sources */,
+				EC3360A81F1F5E1100D6C3AE /* Date-Extension.swift in Sources */,
+				EC3360A91F1F5E1100D6C3AE /* Dispatch.swift in Sources */,
+				EC3360AA1F1F5E1100D6C3AE /* Event.swift in Sources */,
+				EC3360AB1F1F5E1100D6C3AE /* String-Extension.swift in Sources */,
+				EC3360AC1F1F5E1100D6C3AE /* URL-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908901DF866290081B51E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908A61DF8666A0081B51E /* Array-Extension.swift in Sources */,
+				EC7908A71DF8666A0081B51E /* Bool-Extension.swift in Sources */,
+				EC7908A81DF8666A0081B51E /* CGRect-Extension.swift in Sources */,
+				EC7908A91DF8666A0081B51E /* CGSize-Extenstion.swift in Sources */,
+				EC7908AA1DF8666A0081B51E /* Date-Extension.swift in Sources */,
+				EC7908AB1DF8666A0081B51E /* Dispatch.swift in Sources */,
+				EC7908AC1DF8666A0081B51E /* Event.swift in Sources */,
+				EC7908AD1DF8666A0081B51E /* String-Extension.swift in Sources */,
+				EC7908AE1DF8666A0081B51E /* URL-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908AF1DF866800081B51E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908C61DF8669A0081B51E /* UIApplication-Extension.swift in Sources */,
+				EC7908C71DF8669A0081B51E /* UIButton-Extension.swift in Sources */,
+				EC7908C81DF8669A0081B51E /* UIColor-Extension.swift in Sources */,
+				EC7908C91DF8669A0081B51E /* UIFont-Extension.swift in Sources */,
+				EC7908CA1DF8669A0081B51E /* UIImage-Extension.swift in Sources */,
+				EC7908CB1DF8669A0081B51E /* UILabel-Extension.swift in Sources */,
+				EC7908CC1DF8669A0081B51E /* UITableView-Extension.swift in Sources */,
+				EC7908CD1DF8669A0081B51E /* UITableViewCell-Extension.swift in Sources */,
+				EC7908CE1DF8669A0081B51E /* UIView-Extension.swift in Sources */,
+				EC7908CF1DF8669A0081B51E /* UIViewController-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7908D01DF869D10081B51E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7908DD1DF86A090081B51E /* Array-Extension.swift in Sources */,
+				EC7908DE1DF86A090081B51E /* String-Extension.swift in Sources */,
+				EC7908DF1DF86A090081B51E /* PriorityQueue.swift in Sources */,
+				EC7908E01DF86A090081B51E /* Cell.swift in Sources */,
+				EC7908E11DF86A090081B51E /* CellLoop.swift in Sources */,
+				EC7908E21DF86A090081B51E /* CellSink.swift in Sources */,
+				EC7908E31DF86A090081B51E /* CoalesceHandler.swift in Sources */,
+				EC7908E41DF86A090081B51E /* CompositeListener.swift in Sources */,
+				EC7908E51DF86A090081B51E /* IKeepListenersAlive.swift in Sources */,
+				EC7908E61DF86A090081B51E /* ListenerType.swift in Sources */,
+				EC7908E71DF86A090081B51E /* Lazy.swift in Sources */,
+				EC7908E81DF86A090081B51E /* LazyCell.swift in Sources */,
+				EC7908E91DF86A090081B51E /* Listener.swift in Sources */,
+				EC7908EA1DF86A090081B51E /* Memory.swift in Sources */,
+				EC7908EB1DF86A090081B51E /* Node.swift in Sources */,
+				EC7908EC1DF86A090081B51E /* Operational.swift in Sources */,
+				EC7908ED1DF86A090081B51E /* Stream.swift in Sources */,
+				EC7908EE1DF86A090081B51E /* StreamLoop.swift in Sources */,
+				EC7908EF1DF86A090081B51E /* StreamSink.swift in Sources */,
+				EC7908F01DF86A090081B51E /* Transaction.swift in Sources */,
+				EC7908F11DF86A090081B51E /* Unit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -647,20 +1644,25 @@
 			target = 055B91CA1CD13D940048BC24 /* Sodium */;
 			targetProxy = 05E3C6EA1CEFC2CF00BAFE1D /* PBXContainerItemProxy */;
 		};
-		05E3C6ED1CEFC2D500BAFE1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */;
-			targetProxy = 05E3C6EC1CEFC2D500BAFE1D /* PBXContainerItemProxy */;
-		};
-		05E3C6EF1CEFC89E00BAFE1D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 055B91CA1CD13D940048BC24 /* Sodium */;
-			targetProxy = 05E3C6EE1CEFC89E00BAFE1D /* PBXContainerItemProxy */;
-		};
 		05E3C6FF1CEFF53900BAFE1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */;
 			targetProxy = 05E3C6FE1CEFF53900BAFE1D /* PBXContainerItemProxy */;
+		};
+		EC26731E1DE8D8080077F320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055B91CA1CD13D940048BC24 /* Sodium */;
+			targetProxy = EC26731D1DE8D8080077F320 /* PBXContainerItemProxy */;
+		};
+		EC2673231DE8D8170077F320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */;
+			targetProxy = EC2673221DE8D8170077F320 /* PBXContainerItemProxy */;
+		};
+		EC2890141F1624BE000FB227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055B91CA1CD13D940048BC24 /* Sodium */;
+			targetProxy = EC2890151F1624BE000FB227 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -784,18 +1786,21 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ND6GWCAG35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME)Swift";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -805,17 +1810,20 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ND6GWCAG35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.Sodium;
 				PRODUCT_NAME = "$(TARGET_NAME)Swift";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -829,7 +1837,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.SodiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -843,82 +1851,90 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.SodiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
 		05E3C6D61CEFBD1B00BAFE1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SodiumExamples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.examples.SodiumExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		05E3C6D71CEFBD1B00BAFE1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SodiumExamples/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.examples.SodiumExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
 		05E3C6E41CEFBDBB00BAFE1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CF28E6F672C95B7D831455D /* Pods-SodiumCocoa.debug.xcconfig */;
+			baseConfigurationReference = 19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ND6GWCAG35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SodiumCocoa/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		05E3C6E51CEFBDBB00BAFE1D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB7E3A4F1F0503FDF2A7E7F9 /* Pods-SodiumCocoa.release.xcconfig */;
+			baseConfigurationReference = 7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = ND6GWCAG35;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SodiumCocoa/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -932,6 +1948,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -945,6 +1962,560 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0.1;
+			};
+			name = Release;
+		};
+		EC28900F1F16227E000FB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumSwift copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = SodiumSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Debug;
+		};
+		EC2890101F16227E000FB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumSwift copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = SodiumSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Release;
+		};
+		EC2890231F1624BE000FB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoa;
+				PRODUCT_NAME = SodiumCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC2890241F1624BE000FB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.sodium.cocoa.SodiumCocoa;
+				PRODUCT_NAME = SodiumCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC2890371F162552000FB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommon copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = SwiftCommon;
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC2890381F162552000FB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommon copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = SwiftCommon;
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC28904D1F16260B000FB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NA5BE2D52P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommonIOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommonIOS;
+				PRODUCT_NAME = SwiftCommonIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC28904E1F16260B000FB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NA5BE2D52P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommonIOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommonIOS;
+				PRODUCT_NAME = SwiftCommonIOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC28906D1F1626E4000FB227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.Sodium;
+				PRODUCT_NAME = Sodium;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC28906E1F1626E4000FB227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ventures.whirlygig.Sodium;
+				PRODUCT_NAME = Sodium;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC33609E1F1F5D6A00D6C3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumSwift copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = SodiumSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-macOS-Swift.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Debug;
+		};
+		EC33609F1F1F5D6A00D6C3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SodiumSwift copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = SodiumSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-macOS-Swift.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "arm64 x86_64";
+			};
+			name = Release;
+		};
+		EC3360B21F1F5E1100D6C3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommon copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = SwiftCommon;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC3360B31F1F5E1100D6C3AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "SwiftCommon copy2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = SwiftCommon;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC79089B1DF8662A0081B51E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC79089C1DF8662A0081B51E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos10.3;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC7908BA1DF866800081B51E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NA5BE2D52P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftCommonIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommonIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		EC7908BB1DF866800081B51E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NA5BE2D52P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SwiftCommonIOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommonIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		EC7908DB1DF869D10081B51E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SodiumSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "armv7 arm64 x86_64";
+			};
+			name = Debug;
+		};
+		EC7908DC1DF869D10081B51E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SodiumSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALID_ARCHS = "armv7 arm64 x86_64";
 			};
 			name = Release;
 		};
@@ -1001,6 +2572,96 @@
 			buildConfigurations = (
 				05E3C7011CEFF53900BAFE1D /* Debug */,
 				05E3C7021CEFF53900BAFE1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC28900E1F16227E000FB227 /* Build configuration list for PBXNativeTarget "SodiumSwift-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC28900F1F16227E000FB227 /* Debug */,
+				EC2890101F16227E000FB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2890221F1624BE000FB227 /* Build configuration list for PBXNativeTarget "SodiumCocoa-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2890231F1624BE000FB227 /* Debug */,
+				EC2890241F1624BE000FB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2890361F162552000FB227 /* Build configuration list for PBXNativeTarget "SwiftCommon-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2890371F162552000FB227 /* Debug */,
+				EC2890381F162552000FB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC28904C1F16260B000FB227 /* Build configuration list for PBXNativeTarget "SwiftCommonIOS-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC28904D1F16260B000FB227 /* Debug */,
+				EC28904E1F16260B000FB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC28906C1F1626E4000FB227 /* Build configuration list for PBXNativeTarget "Sodium-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC28906D1F1626E4000FB227 /* Debug */,
+				EC28906E1F1626E4000FB227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC33609D1F1F5D6A00D6C3AE /* Build configuration list for PBXNativeTarget "SodiumSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC33609E1F1F5D6A00D6C3AE /* Debug */,
+				EC33609F1F1F5D6A00D6C3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC3360B11F1F5E1100D6C3AE /* Build configuration list for PBXNativeTarget "SwiftCommon-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3360B21F1F5E1100D6C3AE /* Debug */,
+				EC3360B31F1F5E1100D6C3AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC79089A1DF8662A0081B51E /* Build configuration list for PBXNativeTarget "SwiftCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC79089B1DF8662A0081B51E /* Debug */,
+				EC79089C1DF8662A0081B51E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7908B91DF866800081B51E /* Build configuration list for PBXNativeTarget "SwiftCommonIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7908BA1DF866800081B51E /* Debug */,
+				EC7908BB1DF866800081B51E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7908DA1DF869D10081B51E /* Build configuration list for PBXNativeTarget "SodiumSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7908DB1DF869D10081B51E /* Debug */,
+				EC7908DC1DF869D10081B51E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

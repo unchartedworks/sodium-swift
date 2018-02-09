@@ -29,7 +29,7 @@ class SodiumCocoaTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
@@ -42,9 +42,9 @@ class SodiumCocoaTests: XCTestCase {
         XCTAssert(refs.count() == 0, "refs is still \(refs.count())")
     }
 
-    func doTest(refs: MemReferences) {
+    func doTest(_ refs: MemReferences) {
         let clear = NAButton("Clear", refs: refs)
-        clear.frame = CGRectMake(50,30,100,30)
+        clear.frame = CGRect(x: 50,y: 30,width: 100,height: 30)
         clear.setTitle("clear", forState: .Normal)
         clear.setTitleColor(UIColor.blueColor(), forState: .Normal)
         
@@ -52,6 +52,6 @@ class SodiumCocoaTests: XCTestCase {
         //let sClearIt = Stream<String>()
         let text = NATextField(s: sClearIt, text: "Hello", refs: refs)
         text.text = "Hello2"
-        text.frame = CGRectMake(10,50,100,20)
+        text.frame = CGRect(x: 10,y: 50,width: 100,height: 20)
     }
 }

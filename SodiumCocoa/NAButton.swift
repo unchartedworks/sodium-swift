@@ -94,7 +94,7 @@ open class NAButton : UIButton {
         self.textCell = Cell<Title>(value: empty, refs: nil)
         super.init(coder: aDecoder)
      
-        self.setTitleColor(UIColor.lightText, for: .disabled)
+        self.setTitleColor(UIColor.lightGray, for: .disabled)
         self.addTarget(self, action: #selector(NAButton.onclicked), for: .touchUpInside)
     }
     

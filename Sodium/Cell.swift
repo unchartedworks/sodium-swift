@@ -293,7 +293,12 @@ extension CellType {
         let ffa = { a in { b in f(a,b) }}
         return c2.apply(self.map(ffa))
     }
-    
+
+    public func lift<C:CellType, TResult>(_ c2: C, f: @escaping (Element,C.Element) -> [TResult]) -> AnyCell<[TResult]> {
+        let ffa = { a in { b in f(a,b) }}
+        return c2.apply(self.map(ffa))
+    }
+
     /**
      Lift a ternary function into cells, so the returned cell always reflects the specified function applied to the input cells' values.
 

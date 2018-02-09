@@ -9,7 +9,7 @@
 
 import UIKit
 import SodiumCocoa
-import Sodium
+import SodiumSwift
 
 class Example22 : UIViewController {
     
@@ -17,29 +17,29 @@ class Example22 : UIViewController {
 
     override func viewDidLoad() {
         
-        self.view.backgroundColor = UIColor.whiteColor()
-        
+        self.view.backgroundColor = UIColor.white
+
         let msg  = NATextField(text: "hello", refs: refs)
-        msg.frame = CGRectMake(10,0,100,30)
+        msg.frame = CGRect(x:10, y:0, width:100, height:30)
         self.view.addSubview(msg)
         
-        let reversed = msg.stext.map{ String($0.characters.reverse()) }
+        let reversed = msg.txt.map{ String($0.characters.reversed()) }
         
         let lbl = NALabel(txt: reversed, refs: refs)
-        lbl.frame = CGRectMake(10,30,100,30)
+        lbl.frame = CGRect(x:10, y:30, width:100, height:30)
 
         self.view.addSubview(lbl)
-        
+
         let close = UIButton()
-        close.frame = CGRectMake(50,130,100,30)
-        close.setTitle("close", forState: .Normal)
-        close.setTitleColor(UIColor.blueColor(), forState: .Normal)
-        close.addTarget(self, action: #selector(doclose), forControlEvents: .TouchUpInside)
+        close.frame = CGRect(x: 50, y: 130, width:100, height:30)
+        close.setTitle("close", for: .normal)
+        close.setTitleColor(UIColor.blue, for: .normal)
+        close.addTarget(self, action: #selector(doclose), for: .touchUpInside)
         self.view.addSubview(close)
     }
 
     func doclose() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
 
 }

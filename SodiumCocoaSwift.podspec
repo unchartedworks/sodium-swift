@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/NullPlague"
   
   # only because we are using frameworks
-  s.platform     = :ios, "8.0"
+  s.platform     = :tvos, "10.0"
   s.source       = { :git => "https://github.com/SodiumFRP/sodium-swift.git", :tag => s.version }
   s.source_files  = "SodiumCocoa/**/*.{swift}"
 

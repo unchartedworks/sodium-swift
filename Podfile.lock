@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCommon (1.0.6)
+  - SwiftCommonIOS (1.0.5):
+    - SwiftCommon (~> 1.0.0)
+
+DEPENDENCIES:
+  - SwiftCommon
+  - SwiftCommonIOS
+
+SPEC CHECKSUMS:
+  SwiftCommon: 704877e5375740147efe02ad1b1b8646bce3a56a
+  SwiftCommonIOS: 98a0795bdbe973dc77ae801390889e5dae6c518f
+
+PODFILE CHECKSUM: d9acab66d65f90cd51d08f33ebcee206aeb3fbf8
+
+COCOAPODS: 1.0.1
