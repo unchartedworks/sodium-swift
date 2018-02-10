@@ -8,7 +8,7 @@ The original sodium-swift only supports Swift 3, that's why I migrated sodium-sw
 If you’re familiar with the idea of a domain-specific language (DSL), then you can understand FRP as a minimal complete DSL for stateful logic.
 
 ## Example
-This a math app. When you press the next button, it will show a new math question and the previous question's answer.
+This is a math app. When you tap the next button, it will show a new math question and the previous question's answer.
 
 <img src="https://user-images.githubusercontent.com/4646838/36061995-bd7bba2e-0e63-11e8-9bae-dcc525bfad99.png"  width="540"/>
 
