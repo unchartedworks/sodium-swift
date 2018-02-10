@@ -55,8 +55,8 @@
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="aaz-PQ-T2I" id="VMy-gR-Au2"/>
-                        <outlet property="minusButton" destination="eaS-Sy-f5q" id="HI8-na-FaR"/>
-                        <outlet property="plusButton" destination="shg-mj-Tc7" id="Mn2-mo-cLQ"/>
+                        <outlet property="downButton" destination="eaS-Sy-f5q" id="wgl-3m-QPV"/>
+                        <outlet property="upButton" destination="shg-mj-Tc7" id="ZNG-cK-J1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXu-nX-BUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
