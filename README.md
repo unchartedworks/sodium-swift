@@ -13,7 +13,7 @@ This is a counter app. To increase the value, press plus button; to decrease the
 
 <img width="540" alt="counter" src="https://user-images.githubusercontent.com/4646838/36064751-d8a00752-0e8f-11e8-81e9-13320a3b7234.png">
 
-```
+```swift
 import UIKit
 import SodiumCocoa
 import SodiumSwift
@@ -45,7 +45,7 @@ This is a math app. When you tap the next button, it will show a new math questi
 
 Sodium-swift replaces listeners (also known as callbacks) in the widely used observer pattern, making your code cleaner, clearer, more robust, and more maintainable—in a word, simpler.
 
-```
+```swift
 import UIKit
 import SodiumSwift
 import SodiumCocoa
