@@ -9,7 +9,7 @@ If you’re familiar with the idea of a domain-specific language (DSL), then you
 
 ## Examples
 ### Counter
-This is a counter app. To increase the value, press plus button; to decrease the value, to tap minus button. The magic is that you don't have to use a mutable variable to store the value.
+This is a counter app. To increase the value, tap plus button; to decrease the value, tap minus button. The magic is that you don't have to use a mutable variable to store the value.
 
 <img width="540" alt="counter" src="https://user-images.githubusercontent.com/4646838/36064751-d8a00752-0e8f-11e8-81e9-13320a3b7234.png">
 
