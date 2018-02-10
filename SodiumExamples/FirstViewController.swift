@@ -16,9 +16,8 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let vc = Example21()
-        //let vc = Example24()
+        //let vc = Example21()
+        let vc = Example24()
         vc.refs = self.refs
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.present(vc, animated: true, completion: nil)
@@ -26,7 +25,7 @@ class FirstViewController: UIViewController {
         merge2()
         cl()
     }
-
+    
     func merge2() {
         let ones        = CellSink<Int>(1)
         let hundreds    = ones.map({ x in x * 100})
@@ -50,24 +49,11 @@ class FirstViewController: UIViewController {
     }
 
     func cl() {
-       // let eb = StreamLoop<Int>()
-
-        //let s = SodiumSwift.StreamLoop<Int>()
-//        let si = SodiumSwift.Stream<Int>().hold(1)
-//        let c: CellLoop<Int> = CellLoop<Int>(streamLoop: eb, initialValue: 1)
-//        c.loop(si.sample())
-//        let a = SodiumSwift.Stream<Int>()
-//        let b = SodiumSwift.Stream<Int>()
-//        let c = SodiumSwift.Stream<Int>()
-       // let d = SodiumSwift.Stream<Int>.merge(b, f: {(x: Int, y: Int) -> Int in x + y})
-       // let e = d.snapshot(d, f: {(x, y) in x + y})
         let cc = CellSink<Bool>(false)
         let ss = SodiumSwift.Stream<Int>()
         let sg = ss.gate(cc)
         let listener = sg.listen(handler: {s in print(s)})
-       // ss.send(a: 2)
         listener.unlisten()
-        //sequence(<#T##xs: [Cell<A>]##[Cell<A>]#>)
     }
 
     func sequence<A>(_ xs: [Cell<A>]) -> Cell<Array<A>> {
@@ -79,12 +65,5 @@ class FirstViewController: UIViewController {
         }
         return ys
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

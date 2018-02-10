@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,34 +28,67 @@
 		0576BE491CDEDEA300BACC72 /* TestCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE481CDEDEA300BACC72 /* TestCommon.swift */; };
 		057C5C721CD951590013C3E3 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
 		057C5C741CDA76DC0013C3E3 /* Lazy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C731CDA76DC0013C3E3 /* Lazy.swift */; };
-		057DB7421D2C259E005B6E32 /* NATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057DB7411D2C259E005B6E32 /* NATableViewCell.swift */; };
 		05B469B51CD84FB400166473 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
 		05C680E71CFE205F00B41A45 /* Example22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C680E61CFE205F00B41A45 /* Example22.swift */; };
-		05C680E91CFE237100B41A45 /* NALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C680E81CFE237100B41A45 /* NALabel.swift */; };
 		05DB911C1CEE7923006A7678 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 05DB911B1CEE7923006A7678 /* COPYING */; };
 		05DB911D1CEE7AA3006A7678 /* CellLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91E81CD140150048BC24 /* CellLoop.swift */; };
 		05E150431CFF9C6F008AB9B3 /* Example24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E150421CFF9C6F008AB9B3 /* Example24.swift */; };
 		05E3C6C81CEFBD1B00BAFE1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6C71CEFBD1B00BAFE1D /* AppDelegate.swift */; };
 		05E3C6CA1CEFBD1B00BAFE1D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6C91CEFBD1B00BAFE1D /* FirstViewController.swift */; };
 		05E3C6CC1CEFBD1B00BAFE1D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6CB1CEFBD1B00BAFE1D /* SecondViewController.swift */; };
-		05E3C6CF1CEFBD1B00BAFE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E3C6CD1CEFBD1B00BAFE1D /* Main.storyboard */; };
 		05E3C6D11CEFBD1B00BAFE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E3C6D01CEFBD1B00BAFE1D /* Assets.xcassets */; };
 		05E3C6D41CEFBD1B00BAFE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E3C6D21CEFBD1B00BAFE1D /* LaunchScreen.storyboard */; };
-		05E3C6E11CEFBDBB00BAFE1D /* SodiumCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E3C6E01CEFBDBB00BAFE1D /* SodiumCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05E3C6E71CEFBDE400BAFE1D /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E61CEFBDE400BAFE1D /* NATextField.swift */; };
-		05E3C6E91CEFC1E600BAFE1D /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E81CEFC1E600BAFE1D /* NAButton.swift */; };
 		05E3C6F11CEFD26A00BAFE1D /* Example2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F01CEFD26A00BAFE1D /* Example2.1.swift */; };
 		05E3C6F31CEFE24900BAFE1D /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6F21CEFE24900BAFE1D /* Memory.swift */; };
 		05E3C6FB1CEFF53900BAFE1D /* SodiumCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6FA1CEFF53900BAFE1D /* SodiumCocoaTests.swift */; };
 		05E3C6FD1CEFF53900BAFE1D /* SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; };
 		05FE4C071CDD0C3B00108F68 /* StreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FE4C061CDD0C3B00108F68 /* StreamTests.swift */; };
-		EC2673361DE8DC2D0077F320 /* SwiftCommonIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC2673371DE8DC2D0077F320 /* SwiftCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC2673381DE8DC2D0077F320 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC2673391DE8DC360077F320 /* SodiumCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; };
 		EC26733A1DE8DC360077F320 /* SodiumSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055B91CB1CD13D940048BC24 /* SodiumSwift.framework */; };
 		EC26733B1DE8DC4E0077F320 /* SodiumSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 055B91CB1CD13D940048BC24 /* SodiumSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC26733C1DE8DC4E0077F320 /* SodiumCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC272D22202F47640082A167 /* SwiftCommon-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC272D23202F47AE0082A167 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292885202F373100B8B759 /* Date-Extension.swift */; };
+		EC272D24202F47AE0082A167 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292886202F373100B8B759 /* Event.swift */; };
+		EC272D25202F47AE0082A167 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292887202F373100B8B759 /* URL-Extension.swift */; };
+		EC272D26202F47AE0082A167 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292888202F373100B8B759 /* Dispatch.swift */; };
+		EC272D27202F47AE0082A167 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292889202F373100B8B759 /* String-Extension.swift */; };
+		EC272D28202F47AE0082A167 /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288A202F373100B8B759 /* Bool-Extension.swift */; };
+		EC272D29202F47AE0082A167 /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288B202F373100B8B759 /* CGRect-Extension.swift */; };
+		EC272D2A202F47AE0082A167 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288C202F373100B8B759 /* Array-Extension.swift */; };
+		EC272D2B202F47AE0082A167 /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288D202F373100B8B759 /* CGSize-Extenstion.swift */; };
+		EC272D2C202F47DE0082A167 /* NALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DB202F3ED900B8B759 /* NALabel.swift */; };
+		EC272D2D202F47DE0082A167 /* NATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DC202F3ED900B8B759 /* NATableViewCell.swift */; };
+		EC272D2E202F47DE0082A167 /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DD202F3ED900B8B759 /* NAButton.swift */; };
+		EC272D2F202F47DE0082A167 /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DE202F3ED900B8B759 /* NATextField.swift */; };
+		EC272D30202F480F0082A167 /* SodiumCocoa-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2928D8202F3ED900B8B759 /* SodiumCocoa-tvOS.h */; };
+		EC272D31202F48200082A167 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292885202F373100B8B759 /* Date-Extension.swift */; };
+		EC272D32202F48200082A167 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292886202F373100B8B759 /* Event.swift */; };
+		EC272D33202F48200082A167 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292887202F373100B8B759 /* URL-Extension.swift */; };
+		EC272D34202F48200082A167 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292888202F373100B8B759 /* Dispatch.swift */; };
+		EC272D35202F48200082A167 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292889202F373100B8B759 /* String-Extension.swift */; };
+		EC272D36202F48200082A167 /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288A202F373100B8B759 /* Bool-Extension.swift */; };
+		EC272D37202F48200082A167 /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288B202F373100B8B759 /* CGRect-Extension.swift */; };
+		EC272D38202F48200082A167 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288C202F373100B8B759 /* Array-Extension.swift */; };
+		EC272D39202F48200082A167 /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288D202F373100B8B759 /* CGSize-Extenstion.swift */; };
+		EC272D3C202F48530082A167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC272D3B202F48530082A167 /* Info.plist */; };
+		EC272D3E202F48C50082A167 /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC272D3D202F48C50082A167 /* SwiftCommon.h */; };
+		EC272D41202F48ED0082A167 /* SwiftCommonIOS-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC272D3F202F48ED0082A167 /* SwiftCommonIOS-tvOS.h */; };
+		EC272D42202F48ED0082A167 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC272D40202F48ED0082A167 /* Info.plist */; };
+		EC272D44202F491C0082A167 /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC272D3D202F48C50082A167 /* SwiftCommon.h */; };
+		EC272D45202F492F0082A167 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F1202F401F00B8B759 /* UIButton-Extension.swift */; };
+		EC272D46202F492F0082A167 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F2202F401F00B8B759 /* UILabel-Extension.swift */; };
+		EC272D47202F492F0082A167 /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F3202F401F00B8B759 /* UIApplication-Extension.swift */; };
+		EC272D48202F492F0082A167 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F4202F401F00B8B759 /* UIColor-Extension.swift */; };
+		EC272D49202F492F0082A167 /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F5202F401F00B8B759 /* UIFont-Extension.swift */; };
+		EC272D4A202F492F0082A167 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F6202F401F00B8B759 /* UIViewController-Extension.swift */; };
+		EC272D4B202F492F0082A167 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F7202F401F00B8B759 /* UIView-Extension.swift */; };
+		EC272D4C202F492F0082A167 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F8202F401F00B8B759 /* UIImage-Extension.swift */; };
+		EC272D4D202F492F0082A167 /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F9202F401F00B8B759 /* UITableViewCell-Extension.swift */; };
+		EC272D4E202F492F0082A167 /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928FA202F401F00B8B759 /* UITableView-Extension.swift */; };
+		EC272D59202F49550082A167 /* SwiftCommonIOS-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC272D3F202F48ED0082A167 /* SwiftCommonIOS-tvOS.h */; };
+		EC272D5B202F4E850082A167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC272D5A202F4E850082A167 /* Main.storyboard */; };
+		EC272D5D202F57B50082A167 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC272D5C202F57B50082A167 /* CounterViewController.swift */; };
 		EC288FF51F16227E000FB227 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
 		EC288FF61F16227E000FB227 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
 		EC288FF71F16227E000FB227 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
@@ -77,34 +110,7 @@
 		EC2890071F16227E000FB227 /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
 		EC2890081F16227E000FB227 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
 		EC2890091F16227E000FB227 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
-		EC28900C1F16227E000FB227 /* SodiumSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908D71DF869D10081B51E /* SodiumSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC2890181F1624BE000FB227 /* NALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C680E81CFE237100B41A45 /* NALabel.swift */; };
-		EC2890191F1624BE000FB227 /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E81CEFC1E600BAFE1D /* NAButton.swift */; };
-		EC28901A1F1624BE000FB227 /* NATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057DB7411D2C259E005B6E32 /* NATableViewCell.swift */; };
-		EC28901B1F1624BE000FB227 /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E3C6E61CEFBDE400BAFE1D /* NATextField.swift */; };
-		EC28901F1F1624BE000FB227 /* SodiumCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E3C6E01CEFBDBB00BAFE1D /* SodiumCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC2890291F162552000FB227 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
-		EC28902A1F162552000FB227 /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
-		EC28902B1F162552000FB227 /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
-		EC28902C1F162552000FB227 /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
-		EC28902D1F162552000FB227 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
-		EC28902E1F162552000FB227 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
-		EC28902F1F162552000FB227 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
-		EC2890301F162552000FB227 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
-		EC2890311F162552000FB227 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
-		EC2890341F162552000FB227 /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908971DF8662A0081B51E /* SwiftCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC28903D1F16260B000FB227 /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */; };
-		EC28903E1F16260B000FB227 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */; };
-		EC28903F1F16260B000FB227 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */; };
-		EC2890401F16260B000FB227 /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */; };
-		EC2890411F16260B000FB227 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */; };
-		EC2890421F16260B000FB227 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */; };
-		EC2890431F16260B000FB227 /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */; };
-		EC2890441F16260B000FB227 /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */; };
-		EC2890451F16260B000FB227 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C41DF8669A0081B51E /* UIView-Extension.swift */; };
-		EC2890461F16260B000FB227 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */; };
 		EC2890481F16260B000FB227 /* SwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7908951DF866290081B51E /* SwiftCommon.framework */; };
-		EC28904A1F16260B000FB227 /* SwiftCommonIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908B61DF866800081B51E /* SwiftCommonIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC2890531F1626E4000FB227 /* Operational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91F71CD140150048BC24 /* Operational.swift */; };
 		EC2890541F1626E4000FB227 /* IKeepListenersAlive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91EC1CD140150048BC24 /* IKeepListenersAlive.swift */; };
 		EC2890551F1626E4000FB227 /* ListenerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B91ED1CD140150048BC24 /* ListenerType.swift */; };
@@ -129,6 +135,35 @@
 		EC28906B1F1626E4000FB227 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 05DB911B1CEE7923006A7678 /* COPYING */; };
 		EC2890701F162809000FB227 /* SwiftCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2890391F162552000FB227 /* SwiftCommon.framework */; };
 		EC2890711F162810000FB227 /* SwiftCommonIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */; };
+		EC29288E202F373100B8B759 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292885202F373100B8B759 /* Date-Extension.swift */; };
+		EC29288F202F373100B8B759 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292886202F373100B8B759 /* Event.swift */; };
+		EC292890202F373100B8B759 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292887202F373100B8B759 /* URL-Extension.swift */; };
+		EC292891202F373100B8B759 /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292888202F373100B8B759 /* Dispatch.swift */; };
+		EC292892202F373100B8B759 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC292889202F373100B8B759 /* String-Extension.swift */; };
+		EC292893202F373100B8B759 /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288A202F373100B8B759 /* Bool-Extension.swift */; };
+		EC292894202F373100B8B759 /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288B202F373100B8B759 /* CGRect-Extension.swift */; };
+		EC292895202F373100B8B759 /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288C202F373100B8B759 /* Array-Extension.swift */; };
+		EC292896202F373100B8B759 /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC29288D202F373100B8B759 /* CGSize-Extenstion.swift */; };
+		EC292898202F393400B8B759 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC292897202F393400B8B759 /* Info.plist */; };
+		EC2928D3202F3C2400B8B759 /* SodiumSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2928B7202F3C2400B8B759 /* SodiumSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2928E2202F3ED900B8B759 /* SodiumCocoa-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2928D8202F3ED900B8B759 /* SodiumCocoa-tvOS.h */; };
+		EC2928E4202F3ED900B8B759 /* NALabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DB202F3ED900B8B759 /* NALabel.swift */; };
+		EC2928E5202F3ED900B8B759 /* NATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DC202F3ED900B8B759 /* NATableViewCell.swift */; };
+		EC2928E6202F3ED900B8B759 /* NAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DD202F3ED900B8B759 /* NAButton.swift */; };
+		EC2928E7202F3ED900B8B759 /* NATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928DE202F3ED900B8B759 /* NATextField.swift */; };
+		EC2928E8202F3ED900B8B759 /* SodiumCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2928E0202F3ED900B8B759 /* SodiumCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2928EB202F3F6900B8B759 /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC79088A1DF8659E0081B51E /* SwiftCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2928FC202F401F00B8B759 /* SwiftCommonIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC2928EE202F401F00B8B759 /* SwiftCommonIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC2928FE202F401F00B8B759 /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F1202F401F00B8B759 /* UIButton-Extension.swift */; };
+		EC2928FF202F401F00B8B759 /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F2202F401F00B8B759 /* UILabel-Extension.swift */; };
+		EC292900202F401F00B8B759 /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F3202F401F00B8B759 /* UIApplication-Extension.swift */; };
+		EC292901202F401F00B8B759 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F4202F401F00B8B759 /* UIColor-Extension.swift */; };
+		EC292902202F401F00B8B759 /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F5202F401F00B8B759 /* UIFont-Extension.swift */; };
+		EC292903202F401F00B8B759 /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F6202F401F00B8B759 /* UIViewController-Extension.swift */; };
+		EC292904202F401F00B8B759 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F7202F401F00B8B759 /* UIView-Extension.swift */; };
+		EC292905202F401F00B8B759 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F8202F401F00B8B759 /* UIImage-Extension.swift */; };
+		EC292906202F401F00B8B759 /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928F9202F401F00B8B759 /* UITableViewCell-Extension.swift */; };
+		EC292907202F401F00B8B759 /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2928FA202F401F00B8B759 /* UITableView-Extension.swift */; };
 		EC3360841F1F5D6A00D6C3AE /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
 		EC3360851F1F5D6A00D6C3AE /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
 		EC3360861F1F5D6A00D6C3AE /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
@@ -150,41 +185,6 @@
 		EC3360961F1F5D6A00D6C3AE /* StreamSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B920C1CD140280048BC24 /* StreamSink.swift */; };
 		EC3360971F1F5D6A00D6C3AE /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92111CD140360048BC24 /* Transaction.swift */; };
 		EC3360981F1F5D6A00D6C3AE /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055B92121CD140360048BC24 /* Unit.swift */; };
-		EC3360A41F1F5E1100D6C3AE /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
-		EC3360A51F1F5E1100D6C3AE /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
-		EC3360A61F1F5E1100D6C3AE /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
-		EC3360A71F1F5E1100D6C3AE /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
-		EC3360A81F1F5E1100D6C3AE /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
-		EC3360A91F1F5E1100D6C3AE /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
-		EC3360AA1F1F5E1100D6C3AE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
-		EC3360AB1F1F5E1100D6C3AE /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
-		EC3360AC1F1F5E1100D6C3AE /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
-		EC3360D71F1F5FC700D6C3AE /* SodiumSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */; };
-		EC3360D81F1F5FCB00D6C3AE /* SodiumSwift-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC3360DA1F1F606100D6C3AE /* SwiftCommon-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */; };
-		EC3360DB1F1F606400D6C3AE /* SwiftCommon-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC7908991DF8662A0081B51E /* SwiftCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908971DF8662A0081B51E /* SwiftCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC7908A61DF8666A0081B51E /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089D1DF8666A0081B51E /* Array-Extension.swift */; };
-		EC7908A71DF8666A0081B51E /* Bool-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089E1DF8666A0081B51E /* Bool-Extension.swift */; };
-		EC7908A81DF8666A0081B51E /* CGRect-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */; };
-		EC7908A91DF8666A0081B51E /* CGSize-Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */; };
-		EC7908AA1DF8666A0081B51E /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A11DF8666A0081B51E /* Date-Extension.swift */; };
-		EC7908AB1DF8666A0081B51E /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A21DF8666A0081B51E /* Dispatch.swift */; };
-		EC7908AC1DF8666A0081B51E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A31DF8666A0081B51E /* Event.swift */; };
-		EC7908AD1DF8666A0081B51E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A41DF8666A0081B51E /* String-Extension.swift */; };
-		EC7908AE1DF8666A0081B51E /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908A51DF8666A0081B51E /* URL-Extension.swift */; };
-		EC7908B81DF866800081B51E /* SwiftCommonIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908B61DF866800081B51E /* SwiftCommonIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC7908C61DF8669A0081B51E /* UIApplication-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */; };
-		EC7908C71DF8669A0081B51E /* UIButton-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */; };
-		EC7908C81DF8669A0081B51E /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */; };
-		EC7908C91DF8669A0081B51E /* UIFont-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */; };
-		EC7908CA1DF8669A0081B51E /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */; };
-		EC7908CB1DF8669A0081B51E /* UILabel-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */; };
-		EC7908CC1DF8669A0081B51E /* UITableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */; };
-		EC7908CD1DF8669A0081B51E /* UITableViewCell-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */; };
-		EC7908CE1DF8669A0081B51E /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C41DF8669A0081B51E /* UIView-Extension.swift */; };
-		EC7908CF1DF8669A0081B51E /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */; };
-		EC7908D91DF869D10081B51E /* SodiumSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EC7908D71DF869D10081B51E /* SodiumSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC7908DD1DF86A090081B51E /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B469B41CD84FB400166473 /* Array-Extension.swift */; };
 		EC7908DE1DF86A090081B51E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576BE461CDD6D9F00BACC72 /* String-Extension.swift */; };
 		EC7908DF1DF86A090081B51E /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057C5C711CD951590013C3E3 /* PriorityQueue.swift */; };
@@ -277,9 +277,6 @@
 			files = (
 				EC26733B1DE8DC4E0077F320 /* SodiumSwift.framework in Embed Frameworks */,
 				EC26733C1DE8DC4E0077F320 /* SodiumCocoa.framework in Embed Frameworks */,
-				EC2673361DE8DC2D0077F320 /* SwiftCommonIOS.framework in Embed Frameworks */,
-				EC2673371DE8DC2D0077F320 /* SwiftCommon.framework in Embed Frameworks */,
-				EC2673381DE8DC2D0077F320 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
@@ -311,85 +308,79 @@
 		0576BE481CDEDEA300BACC72 /* TestCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCommon.swift; sourceTree = "<group>"; };
 		057C5C711CD951590013C3E3 /* PriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		057C5C731CDA76DC0013C3E3 /* Lazy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lazy.swift; sourceTree = "<group>"; };
-		057DB7411D2C259E005B6E32 /* NATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATableViewCell.swift; sourceTree = "<group>"; };
 		05B469B41CD84FB400166473 /* Array-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array-Extension.swift"; sourceTree = "<group>"; };
 		05C680E61CFE205F00B41A45 /* Example22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example22.swift; sourceTree = "<group>"; };
-		05C680E81CFE237100B41A45 /* NALabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NALabel.swift; sourceTree = "<group>"; };
 		05DB911B1CEE7923006A7678 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		05E150421CFF9C6F008AB9B3 /* Example24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example24.swift; sourceTree = "<group>"; };
 		05E3C6C51CEFBD1B00BAFE1D /* SodiumExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SodiumExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E3C6C71CEFBD1B00BAFE1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E3C6C91CEFBD1B00BAFE1D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		05E3C6CB1CEFBD1B00BAFE1D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		05E3C6CE1CEFBD1B00BAFE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05E3C6D01CEFBD1B00BAFE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05E3C6D31CEFBD1B00BAFE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05E3C6D51CEFBD1B00BAFE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E3C6DE1CEFBDBB00BAFE1D /* SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		05E3C6E01CEFBDBB00BAFE1D /* SodiumCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SodiumCocoa.h; sourceTree = "<group>"; };
-		05E3C6E21CEFBDBB00BAFE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05E3C6E61CEFBDE400BAFE1D /* NATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATextField.swift; sourceTree = "<group>"; };
-		05E3C6E81CEFC1E600BAFE1D /* NAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAButton.swift; sourceTree = "<group>"; };
 		05E3C6F01CEFD26A00BAFE1D /* Example2.1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2.1.swift; sourceTree = "<group>"; };
 		05E3C6F21CEFE24900BAFE1D /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		05E3C6F81CEFF53900BAFE1D /* SodiumCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodiumCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E3C6FA1CEFF53900BAFE1D /* SodiumCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumCocoaTests.swift; sourceTree = "<group>"; };
 		05E3C6FC1CEFF53900BAFE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05FE4C061CDD0C3B00108F68 /* StreamTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamTests.swift; sourceTree = "<group>"; };
-		19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.debug.xcconfig"; sourceTree = "<group>"; };
-		4795DBBCD119A6FB594C26EB /* Pods_SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SodiumCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa.release.xcconfig"; sourceTree = "<group>"; };
-		EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommon.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCommon/SwiftCommon.framework"; sourceTree = "<group>"; };
-		EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommonIOS.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCommonIOS/SwiftCommonIOS.framework"; sourceTree = "<group>"; };
+		EC272D3B202F48530082A167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC272D3D202F48C50082A167 /* SwiftCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCommon.h; sourceTree = "<group>"; };
+		EC272D3F202F48ED0082A167 /* SwiftCommonIOS-tvOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftCommonIOS-tvOS.h"; sourceTree = "<group>"; };
+		EC272D40202F48ED0082A167 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC272D5A202F4E850082A167 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC272D5C202F57B50082A167 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		EC2890111F16227E000FB227 /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2890121F16227E000FB227 /* SodiumSwift copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy-Info.plist"; sourceTree = "<absolute>"; };
 		EC2890251F1624BE000FB227 /* SodiumCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2890261F1624BE000FB227 /* SodiumCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumCocoa copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
 		EC2890391F162552000FB227 /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC28903A1F162553000FB227 /* SwiftCommon copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommon copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommon copy-Info.plist"; sourceTree = "<absolute>"; };
 		EC28904F1F16260B000FB227 /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommonIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2890501F16260B000FB227 /* SwiftCommonIOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommonIOS copy-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommonIOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		EC28906F1F1626E4000FB227 /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC292885202F373100B8B759 /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
+		EC292886202F373100B8B759 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		EC292887202F373100B8B759 /* URL-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL-Extension.swift"; sourceTree = "<group>"; };
+		EC292888202F373100B8B759 /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		EC292889202F373100B8B759 /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		EC29288A202F373100B8B759 /* Bool-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool-Extension.swift"; sourceTree = "<group>"; };
+		EC29288B202F373100B8B759 /* CGRect-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect-Extension.swift"; sourceTree = "<group>"; };
+		EC29288C202F373100B8B759 /* Array-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array-Extension.swift"; sourceTree = "<group>"; };
+		EC29288D202F373100B8B759 /* CGSize-Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize-Extenstion.swift"; sourceTree = "<group>"; };
+		EC292897202F393400B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC29289A202F3C2400B8B759 /* SodiumSwift-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SodiumSwift-macOS.h"; sourceTree = "<group>"; };
+		EC29289B202F3C2400B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928B4202F3C2400B8B759 /* SodiumSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodiumSwift.h; sourceTree = "<group>"; };
+		EC2928B5202F3C2400B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928B7202F3C2400B8B759 /* SodiumSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodiumSwift.h; sourceTree = "<group>"; };
+		EC2928B8202F3C2400B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928D8202F3ED900B8B759 /* SodiumCocoa-tvOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SodiumCocoa-tvOS.h"; sourceTree = "<group>"; };
+		EC2928D9202F3ED900B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928DB202F3ED900B8B759 /* NALabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NALabel.swift; sourceTree = "<group>"; };
+		EC2928DC202F3ED900B8B759 /* NATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATableViewCell.swift; sourceTree = "<group>"; };
+		EC2928DD202F3ED900B8B759 /* NAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NAButton.swift; sourceTree = "<group>"; };
+		EC2928DE202F3ED900B8B759 /* NATextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NATextField.swift; sourceTree = "<group>"; };
+		EC2928E0202F3ED900B8B759 /* SodiumCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SodiumCocoa.h; sourceTree = "<group>"; };
+		EC2928E1202F3ED900B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928EE202F401F00B8B759 /* SwiftCommonIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCommonIOS.h; sourceTree = "<group>"; };
+		EC2928EF202F401F00B8B759 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2928F1202F401F00B8B759 /* UIButton-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F2202F401F00B8B759 /* UILabel-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F3202F401F00B8B759 /* UIApplication-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F4202F401F00B8B759 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F5202F401F00B8B759 /* UIFont-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F6202F401F00B8B759 /* UIViewController-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F7202F401F00B8B759 /* UIView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F8202F401F00B8B759 /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
+		EC2928F9202F401F00B8B759 /* UITableViewCell-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell-Extension.swift"; sourceTree = "<group>"; };
+		EC2928FA202F401F00B8B759 /* UITableView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Extension.swift"; sourceTree = "<group>"; };
 		EC3360A01F1F5D6A00D6C3AE /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC3360A11F1F5D6A00D6C3AE /* SodiumSwift copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy2-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy2-Info.plist"; sourceTree = "<absolute>"; };
 		EC3360B41F1F5E1100D6C3AE /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC3360B51F1F5E1100D6C3AE /* SwiftCommon copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftCommon copy2-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SwiftCommon copy2-Info.plist"; sourceTree = "<absolute>"; };
-		EC3360D51F1F5E6E00D6C3AE /* SodiumSwift copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SodiumSwift copy3-Info.plist"; path = "/Users/liang/Dropbox/OSX/sodium-swift/SodiumSwift copy3-Info.plist"; sourceTree = "<absolute>"; };
-		EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SodiumSwift-macOS.h"; sourceTree = "<group>"; };
 		EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftCommon-macOS.h"; sourceTree = "<group>"; };
 		EC79088A1DF8659E0081B51E /* SwiftCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommon.h; sourceTree = "<group>"; };
 		EC79088B1DF8659E0081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7908951DF866290081B51E /* SwiftCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7908971DF8662A0081B51E /* SwiftCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommon.h; sourceTree = "<group>"; };
-		EC7908981DF8662A0081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC79089D1DF8666A0081B51E /* Array-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Array-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Array-Extension.swift"; sourceTree = "<group>"; };
-		EC79089E1DF8666A0081B51E /* Bool-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bool-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Bool-Extension.swift"; sourceTree = "<group>"; };
-		EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGRect-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/CGRect-Extension.swift"; sourceTree = "<group>"; };
-		EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGSize-Extenstion.swift"; path = "Pods/SwiftCommon/SwiftCommon/CGSize-Extenstion.swift"; sourceTree = "<group>"; };
-		EC7908A11DF8666A0081B51E /* Date-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/Date-Extension.swift"; sourceTree = "<group>"; };
-		EC7908A21DF8666A0081B51E /* Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dispatch.swift; path = Pods/SwiftCommon/SwiftCommon/Dispatch.swift; sourceTree = "<group>"; };
-		EC7908A31DF8666A0081B51E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Pods/SwiftCommon/SwiftCommon/Event.swift; sourceTree = "<group>"; };
-		EC7908A41DF8666A0081B51E /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/String-Extension.swift"; sourceTree = "<group>"; };
-		EC7908A51DF8666A0081B51E /* URL-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "URL-Extension.swift"; path = "Pods/SwiftCommon/SwiftCommon/URL-Extension.swift"; sourceTree = "<group>"; };
 		EC7908B41DF866800081B51E /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCommonIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7908B61DF866800081B51E /* SwiftCommonIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCommonIOS.h; sourceTree = "<group>"; };
-		EC7908B71DF866800081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIApplication-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIApplication-Extension.swift"; sourceTree = "<group>"; };
-		EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIButton-Extension.swift"; sourceTree = "<group>"; };
-		EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIColor-Extension.swift"; sourceTree = "<group>"; };
-		EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIFont-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIImage-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UILabel-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableView-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UITableView-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableViewCell-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UITableViewCell-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C41DF8669A0081B51E /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIView-Extension.swift"; sourceTree = "<group>"; };
-		EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController-Extension.swift"; path = "Pods/SwiftCommonIOS/SwiftCommonIOS/UIViewController-Extension.swift"; sourceTree = "<group>"; };
 		EC7908D51DF869D10081B51E /* SodiumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SodiumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7908D71DF869D10081B51E /* SodiumSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SodiumSwift.h; sourceTree = "<group>"; };
-		EC7908D81DF869D10081B51E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECE106AE1EEED0ED005BE50A /* SwiftCommonIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCommonIOS.framework; path = "../../../Library/Developer/Xcode/DerivedData/Sodium-ckmrzxdvwfmnebfzgggstosvqkfp/Build/Products/Debug-iphoneos/SwiftCommonIOS/SwiftCommonIOS.framework"; sourceTree = "<group>"; };
-		ECF63DEA1DF88CE4001EA910 /* SodiumCocoa-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SodiumCocoa-tvOS.h"; sourceTree = "<group>"; };
-		ECF63DEB1DF88CE4001EA910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -509,59 +500,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04E8560DD0104DEB01BF3ABE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ECE106AE1EEED0ED005BE50A /* SwiftCommonIOS.framework */,
-				EC26732C1DE8DADC0077F320 /* SwiftCommonIOS.framework */,
-				EC26732A1DE8DAD80077F320 /* SwiftCommon.framework */,
-				4795DBBCD119A6FB594C26EB /* Pods_SodiumCocoa.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		055B91C11CD13D940048BC24 = {
 			isa = PBXGroup;
 			children = (
-				EC7908BC1DF8669A0081B51E /* UIApplication-Extension.swift */,
-				EC7908BD1DF8669A0081B51E /* UIButton-Extension.swift */,
-				EC7908BE1DF8669A0081B51E /* UIColor-Extension.swift */,
-				EC7908BF1DF8669A0081B51E /* UIFont-Extension.swift */,
-				EC7908C01DF8669A0081B51E /* UIImage-Extension.swift */,
-				EC7908C11DF8669A0081B51E /* UILabel-Extension.swift */,
-				EC7908C21DF8669A0081B51E /* UITableView-Extension.swift */,
-				EC7908C31DF8669A0081B51E /* UITableViewCell-Extension.swift */,
-				EC7908C41DF8669A0081B51E /* UIView-Extension.swift */,
-				EC7908C51DF8669A0081B51E /* UIViewController-Extension.swift */,
-				EC79089D1DF8666A0081B51E /* Array-Extension.swift */,
-				EC79089E1DF8666A0081B51E /* Bool-Extension.swift */,
-				EC79089F1DF8666A0081B51E /* CGRect-Extension.swift */,
-				EC7908A01DF8666A0081B51E /* CGSize-Extenstion.swift */,
-				EC7908A11DF8666A0081B51E /* Date-Extension.swift */,
-				EC7908A21DF8666A0081B51E /* Dispatch.swift */,
-				EC7908A31DF8666A0081B51E /* Event.swift */,
-				EC7908A41DF8666A0081B51E /* String-Extension.swift */,
-				EC7908A51DF8666A0081B51E /* URL-Extension.swift */,
-				055B91CD1CD13D940048BC24 /* Sodium */,
-				055B91D91CD13D950048BC24 /* SodiumTests */,
-				05E3C6C61CEFBD1B00BAFE1D /* SodiumExamples */,
+				EC292883202F334D00B8B759 /* SwiftCommon */,
 				05E3C6DF1CEFBDBB00BAFE1D /* SodiumCocoa */,
-				05E3C6F91CEFF53900BAFE1D /* SodiumCocoaTests */,
-				EC7908891DF8659E0081B51E /* SwiftCommon */,
-				EC7908961DF8662A0081B51E /* SwiftCommon */,
 				EC7908B51DF866800081B51E /* SwiftCommonIOS */,
 				EC7908D61DF869D10081B51E /* SodiumSwift */,
-				ECF63DE91DF88CE4001EA910 /* SodiumCocoa-tvOS */,
+				055B91CD1CD13D940048BC24 /* Sodium */,
+				05E3C6C61CEFBD1B00BAFE1D /* SodiumExamples */,
+				055B91D91CD13D950048BC24 /* SodiumTests */,
+				05E3C6F91CEFF53900BAFE1D /* SodiumCocoaTests */,
 				055B91CC1CD13D940048BC24 /* Products */,
-				04E8560DD0104DEB01BF3ABE /* Frameworks */,
-				9C960D6A5ABBE9A84CAB45F5 /* Pods */,
-				EC2890121F16227E000FB227 /* SodiumSwift copy-Info.plist */,
-				EC2890261F1624BE000FB227 /* SodiumCocoa copy-Info.plist */,
-				EC28903A1F162553000FB227 /* SwiftCommon copy-Info.plist */,
-				EC2890501F16260B000FB227 /* SwiftCommonIOS copy-Info.plist */,
-				EC3360A11F1F5D6A00D6C3AE /* SodiumSwift copy2-Info.plist */,
-				EC3360B51F1F5E1100D6C3AE /* SwiftCommon copy2-Info.plist */,
-				EC3360D51F1F5E6E00D6C3AE /* SodiumSwift copy3-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -641,13 +591,14 @@
 				05E3C6C71CEFBD1B00BAFE1D /* AppDelegate.swift */,
 				05E3C6C91CEFBD1B00BAFE1D /* FirstViewController.swift */,
 				05E3C6CB1CEFBD1B00BAFE1D /* SecondViewController.swift */,
-				05E3C6CD1CEFBD1B00BAFE1D /* Main.storyboard */,
 				05E3C6D01CEFBD1B00BAFE1D /* Assets.xcassets */,
 				05E3C6D21CEFBD1B00BAFE1D /* LaunchScreen.storyboard */,
+				EC272D5A202F4E850082A167 /* Main.storyboard */,
 				05E3C6D51CEFBD1B00BAFE1D /* Info.plist */,
 				05E3C6F01CEFD26A00BAFE1D /* Example2.1.swift */,
 				05C680E61CFE205F00B41A45 /* Example22.swift */,
 				05E150421CFF9C6F008AB9B3 /* Example24.swift */,
+				EC272D5C202F57B50082A167 /* CounterViewController.swift */,
 			);
 			path = SodiumExamples;
 			sourceTree = "<group>";
@@ -655,12 +606,9 @@
 		05E3C6DF1CEFBDBB00BAFE1D /* SodiumCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				05E3C6E01CEFBDBB00BAFE1D /* SodiumCocoa.h */,
-				05E3C6E21CEFBDBB00BAFE1D /* Info.plist */,
-				05E3C6E61CEFBDE400BAFE1D /* NATextField.swift */,
-				05E3C6E81CEFC1E600BAFE1D /* NAButton.swift */,
-				05C680E81CFE237100B41A45 /* NALabel.swift */,
-				057DB7411D2C259E005B6E32 /* NATableViewCell.swift */,
+				EC2928DF202F3ED900B8B759 /* iOS */,
+				EC2928DA202F3ED900B8B759 /* Sources */,
+				EC2928D7202F3ED900B8B759 /* tvOS */,
 			);
 			path = SodiumCocoa;
 			sourceTree = "<group>";
@@ -674,39 +622,157 @@
 			path = SodiumCocoaTests;
 			sourceTree = "<group>";
 		};
-		9C960D6A5ABBE9A84CAB45F5 /* Pods */ = {
+		EC272D3A202F48530082A167 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */,
-				7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */,
+				EC272D3D202F48C50082A167 /* SwiftCommon.h */,
+				EC272D3B202F48530082A167 /* Info.plist */,
 			);
-			name = Pods;
+			path = tvOS;
 			sourceTree = "<group>";
 		};
-		EC7908891DF8659E0081B51E /* SwiftCommon */ = {
+		EC292883202F334D00B8B759 /* SwiftCommon */ = {
 			isa = PBXGroup;
 			children = (
+				EC272D3A202F48530082A167 /* tvOS */,
+				EC292884202F373100B8B759 /* Sources */,
+				EC7908891DF8659E0081B51E /* iOS */,
+				EC7908961DF8662A0081B51E /* macOS */,
+			);
+			path = SwiftCommon;
+			sourceTree = "<group>";
+		};
+		EC292884202F373100B8B759 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC292885202F373100B8B759 /* Date-Extension.swift */,
+				EC292886202F373100B8B759 /* Event.swift */,
+				EC292887202F373100B8B759 /* URL-Extension.swift */,
+				EC292888202F373100B8B759 /* Dispatch.swift */,
+				EC292889202F373100B8B759 /* String-Extension.swift */,
+				EC29288A202F373100B8B759 /* Bool-Extension.swift */,
+				EC29288B202F373100B8B759 /* CGRect-Extension.swift */,
+				EC29288C202F373100B8B759 /* Array-Extension.swift */,
+				EC29288D202F373100B8B759 /* CGSize-Extenstion.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC292899202F3C2400B8B759 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC29289A202F3C2400B8B759 /* SodiumSwift-macOS.h */,
+				EC29289B202F3C2400B8B759 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EC2928B3202F3C2400B8B759 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928B4202F3C2400B8B759 /* SodiumSwift.h */,
+				EC2928B5202F3C2400B8B759 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		EC2928B6202F3C2400B8B759 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928B7202F3C2400B8B759 /* SodiumSwift.h */,
+				EC2928B8202F3C2400B8B759 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EC2928D7202F3ED900B8B759 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928D8202F3ED900B8B759 /* SodiumCocoa-tvOS.h */,
+				EC2928D9202F3ED900B8B759 /* Info.plist */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		EC2928DA202F3ED900B8B759 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928DB202F3ED900B8B759 /* NALabel.swift */,
+				EC2928DC202F3ED900B8B759 /* NATableViewCell.swift */,
+				EC2928DD202F3ED900B8B759 /* NAButton.swift */,
+				EC2928DE202F3ED900B8B759 /* NATextField.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC2928DF202F3ED900B8B759 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928E0202F3ED900B8B759 /* SodiumCocoa.h */,
+				EC2928E1202F3ED900B8B759 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EC2928ED202F401F00B8B759 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928EE202F401F00B8B759 /* SwiftCommonIOS.h */,
+				EC2928EF202F401F00B8B759 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EC2928F0202F401F00B8B759 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC2928F1202F401F00B8B759 /* UIButton-Extension.swift */,
+				EC2928F2202F401F00B8B759 /* UILabel-Extension.swift */,
+				EC2928F3202F401F00B8B759 /* UIApplication-Extension.swift */,
+				EC2928F4202F401F00B8B759 /* UIColor-Extension.swift */,
+				EC2928F5202F401F00B8B759 /* UIFont-Extension.swift */,
+				EC2928F6202F401F00B8B759 /* UIViewController-Extension.swift */,
+				EC2928F7202F401F00B8B759 /* UIView-Extension.swift */,
+				EC2928F8202F401F00B8B759 /* UIImage-Extension.swift */,
+				EC2928F9202F401F00B8B759 /* UITableViewCell-Extension.swift */,
+				EC2928FA202F401F00B8B759 /* UITableView-Extension.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC2928FB202F401F00B8B759 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC272D40202F48ED0082A167 /* Info.plist */,
+				EC272D3F202F48ED0082A167 /* SwiftCommonIOS-tvOS.h */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		EC7908891DF8659E0081B51E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC292897202F393400B8B759 /* Info.plist */,
 				EC79088A1DF8659E0081B51E /* SwiftCommon.h */,
-				EC79088B1DF8659E0081B51E /* Info.plist */,
 			);
-			path = SwiftCommon;
+			path = iOS;
 			sourceTree = "<group>";
 		};
-		EC7908961DF8662A0081B51E /* SwiftCommon */ = {
+		EC7908961DF8662A0081B51E /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC79088B1DF8659E0081B51E /* Info.plist */,
 				EC3360D91F1F606100D6C3AE /* SwiftCommon-macOS.h */,
-				EC7908971DF8662A0081B51E /* SwiftCommon.h */,
-				EC7908981DF8662A0081B51E /* Info.plist */,
 			);
-			path = SwiftCommon;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		EC7908B51DF866800081B51E /* SwiftCommonIOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC7908B61DF866800081B51E /* SwiftCommonIOS.h */,
-				EC7908B71DF866800081B51E /* Info.plist */,
+				EC2928ED202F401F00B8B759 /* iOS */,
+				EC2928F0202F401F00B8B759 /* Sources */,
+				EC2928FB202F401F00B8B759 /* tvOS */,
 			);
 			path = SwiftCommonIOS;
 			sourceTree = "<group>";
@@ -714,20 +780,11 @@
 		EC7908D61DF869D10081B51E /* SodiumSwift */ = {
 			isa = PBXGroup;
 			children = (
-				EC3360D61F1F5FC700D6C3AE /* SodiumSwift-macOS.h */,
-				EC7908D71DF869D10081B51E /* SodiumSwift.h */,
-				EC7908D81DF869D10081B51E /* Info.plist */,
+				EC2928B6202F3C2400B8B759 /* iOS */,
+				EC292899202F3C2400B8B759 /* macOS */,
+				EC2928B3202F3C2400B8B759 /* tvOS */,
 			);
 			path = SodiumSwift;
-			sourceTree = "<group>";
-		};
-		ECF63DE91DF88CE4001EA910 /* SodiumCocoa-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				ECF63DEA1DF88CE4001EA910 /* SodiumCocoa-tvOS.h */,
-				ECF63DEB1DF88CE4001EA910 /* Info.plist */,
-			);
-			path = "SodiumCocoa-tvOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -744,7 +801,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05E3C6E11CEFBDBB00BAFE1D /* SodiumCocoa.h in Headers */,
+				EC2928E8202F3ED900B8B759 /* SodiumCocoa.h in Headers */,
+				EC2928E2202F3ED900B8B759 /* SodiumCocoa-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,7 +810,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC28900C1F16227E000FB227 /* SodiumSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,7 +817,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC28901F1F1624BE000FB227 /* SodiumCocoa.h in Headers */,
+				EC272D30202F480F0082A167 /* SodiumCocoa-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,7 +825,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2890341F162552000FB227 /* SwiftCommon.h in Headers */,
+				EC272D44202F491C0082A167 /* SwiftCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,7 +833,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC28904A1F16260B000FB227 /* SwiftCommonIOS.h in Headers */,
+				EC272D59202F49550082A167 /* SwiftCommonIOS-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,7 +848,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3360D81F1F5FCB00D6C3AE /* SodiumSwift-macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,7 +855,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3360DB1F1F606400D6C3AE /* SwiftCommon-macOS.h in Headers */,
+				EC272D22202F47640082A167 /* SwiftCommon-macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,8 +863,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7908991DF8662A0081B51E /* SwiftCommon.h in Headers */,
-				EC3360DA1F1F606100D6C3AE /* SwiftCommon-macOS.h in Headers */,
+				EC2928EB202F3F6900B8B759 /* SwiftCommon.h in Headers */,
+				EC272D3E202F48C50082A167 /* SwiftCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,7 +872,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7908B81DF866800081B51E /* SwiftCommonIOS.h in Headers */,
+				EC2928FC202F401F00B8B759 /* SwiftCommonIOS.h in Headers */,
+				EC272D41202F48ED0082A167 /* SwiftCommonIOS-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,8 +881,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7908D91DF869D10081B51E /* SodiumSwift.h in Headers */,
-				EC3360D71F1F5FC700D6C3AE /* SodiumSwift-macOS.h in Headers */,
+				EC2928D3202F3C2400B8B759 /* SodiumSwift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,7 +952,6 @@
 				05E3C6DA1CEFBDBB00BAFE1D /* Frameworks */,
 				05E3C6DB1CEFBDBB00BAFE1D /* Headers */,
 				05E3C6DC1CEFBDBB00BAFE1D /* Resources */,
-				94C3A814ACAC7122DDC711E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1118,7 +1173,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Whirlygig Ventures";
 				TargetAttributes = {
 					055B91CA1CD13D940048BC24 = {
@@ -1161,7 +1216,7 @@
 				};
 			};
 			buildConfigurationList = 055B91C51CD13D940048BC24 /* Build configuration list for PBXProject "Sodium" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1175,7 +1230,6 @@
 			targets = (
 				055B91CA1CD13D940048BC24 /* Sodium */,
 				055B91D41CD13D950048BC24 /* SodiumTests */,
-				05E3C6C41CEFBD1B00BAFE1D /* SodiumExamples */,
 				05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */,
 				05E3C6F71CEFF53900BAFE1D /* SodiumCocoaTests */,
 				EC7908941DF866290081B51E /* SwiftCommon */,
@@ -1188,6 +1242,7 @@
 				EC2890511F1626E4000FB227 /* Sodium-tvOS */,
 				EC3360821F1F5D6A00D6C3AE /* SodiumSwift-macOS */,
 				EC3360A21F1F5E1100D6C3AE /* SwiftCommon-macOS */,
+				05E3C6C41CEFBD1B00BAFE1D /* SodiumExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -1213,8 +1268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E3C6D41CEFBD1B00BAFE1D /* LaunchScreen.storyboard in Resources */,
+				EC272D5B202F4E850082A167 /* Main.storyboard in Resources */,
 				05E3C6D11CEFBD1B00BAFE1D /* Assets.xcassets in Resources */,
-				05E3C6CF1CEFBD1B00BAFE1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,6 +1341,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC272D3C202F48530082A167 /* Info.plist in Resources */,
+				EC292898202F393400B8B759 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1293,6 +1350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC272D42202F48ED0082A167 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1306,21 +1364,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		94C3A814ACAC7122DDC711E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SodiumCocoa/Pods-SodiumCocoa-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EC2890161F1624BE000FB227 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1398,6 +1441,7 @@
 			files = (
 				05E150431CFF9C6F008AB9B3 /* Example24.swift in Sources */,
 				05E3C6F11CEFD26A00BAFE1D /* Example2.1.swift in Sources */,
+				EC272D5D202F57B50082A167 /* CounterViewController.swift in Sources */,
 				05E3C6CC1CEFBD1B00BAFE1D /* SecondViewController.swift in Sources */,
 				05E3C6C81CEFBD1B00BAFE1D /* AppDelegate.swift in Sources */,
 				05C680E71CFE205F00B41A45 /* Example22.swift in Sources */,
@@ -1409,10 +1453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C680E91CFE237100B41A45 /* NALabel.swift in Sources */,
-				05E3C6E91CEFC1E600BAFE1D /* NAButton.swift in Sources */,
-				057DB7421D2C259E005B6E32 /* NATableViewCell.swift in Sources */,
-				05E3C6E71CEFBDE400BAFE1D /* NATextField.swift in Sources */,
+				EC2928E7202F3ED900B8B759 /* NATextField.swift in Sources */,
+				EC2928E6202F3ED900B8B759 /* NAButton.swift in Sources */,
+				EC2928E5202F3ED900B8B759 /* NATableViewCell.swift in Sources */,
+				EC2928E4202F3ED900B8B759 /* NALabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1456,10 +1500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2890181F1624BE000FB227 /* NALabel.swift in Sources */,
-				EC2890191F1624BE000FB227 /* NAButton.swift in Sources */,
-				EC28901A1F1624BE000FB227 /* NATableViewCell.swift in Sources */,
-				EC28901B1F1624BE000FB227 /* NATextField.swift in Sources */,
+				EC272D2C202F47DE0082A167 /* NALabel.swift in Sources */,
+				EC272D2D202F47DE0082A167 /* NATableViewCell.swift in Sources */,
+				EC272D2E202F47DE0082A167 /* NAButton.swift in Sources */,
+				EC272D2F202F47DE0082A167 /* NATextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1467,15 +1511,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2890291F162552000FB227 /* Array-Extension.swift in Sources */,
-				EC28902A1F162552000FB227 /* Bool-Extension.swift in Sources */,
-				EC28902B1F162552000FB227 /* CGRect-Extension.swift in Sources */,
-				EC28902C1F162552000FB227 /* CGSize-Extenstion.swift in Sources */,
-				EC28902D1F162552000FB227 /* Date-Extension.swift in Sources */,
-				EC28902E1F162552000FB227 /* Dispatch.swift in Sources */,
-				EC28902F1F162552000FB227 /* Event.swift in Sources */,
-				EC2890301F162552000FB227 /* String-Extension.swift in Sources */,
-				EC2890311F162552000FB227 /* URL-Extension.swift in Sources */,
+				EC272D31202F48200082A167 /* Date-Extension.swift in Sources */,
+				EC272D32202F48200082A167 /* Event.swift in Sources */,
+				EC272D33202F48200082A167 /* URL-Extension.swift in Sources */,
+				EC272D34202F48200082A167 /* Dispatch.swift in Sources */,
+				EC272D35202F48200082A167 /* String-Extension.swift in Sources */,
+				EC272D36202F48200082A167 /* Bool-Extension.swift in Sources */,
+				EC272D37202F48200082A167 /* CGRect-Extension.swift in Sources */,
+				EC272D38202F48200082A167 /* Array-Extension.swift in Sources */,
+				EC272D39202F48200082A167 /* CGSize-Extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1483,16 +1527,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC28903D1F16260B000FB227 /* UIApplication-Extension.swift in Sources */,
-				EC28903E1F16260B000FB227 /* UIButton-Extension.swift in Sources */,
-				EC28903F1F16260B000FB227 /* UIColor-Extension.swift in Sources */,
-				EC2890401F16260B000FB227 /* UIFont-Extension.swift in Sources */,
-				EC2890411F16260B000FB227 /* UIImage-Extension.swift in Sources */,
-				EC2890421F16260B000FB227 /* UILabel-Extension.swift in Sources */,
-				EC2890431F16260B000FB227 /* UITableView-Extension.swift in Sources */,
-				EC2890441F16260B000FB227 /* UITableViewCell-Extension.swift in Sources */,
-				EC2890451F16260B000FB227 /* UIView-Extension.swift in Sources */,
-				EC2890461F16260B000FB227 /* UIViewController-Extension.swift in Sources */,
+				EC272D45202F492F0082A167 /* UIButton-Extension.swift in Sources */,
+				EC272D46202F492F0082A167 /* UILabel-Extension.swift in Sources */,
+				EC272D47202F492F0082A167 /* UIApplication-Extension.swift in Sources */,
+				EC272D48202F492F0082A167 /* UIColor-Extension.swift in Sources */,
+				EC272D49202F492F0082A167 /* UIFont-Extension.swift in Sources */,
+				EC272D4A202F492F0082A167 /* UIViewController-Extension.swift in Sources */,
+				EC272D4B202F492F0082A167 /* UIView-Extension.swift in Sources */,
+				EC272D4C202F492F0082A167 /* UIImage-Extension.swift in Sources */,
+				EC272D4D202F492F0082A167 /* UITableViewCell-Extension.swift in Sources */,
+				EC272D4E202F492F0082A167 /* UITableView-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1556,15 +1600,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3360A41F1F5E1100D6C3AE /* Array-Extension.swift in Sources */,
-				EC3360A51F1F5E1100D6C3AE /* Bool-Extension.swift in Sources */,
-				EC3360A61F1F5E1100D6C3AE /* CGRect-Extension.swift in Sources */,
-				EC3360A71F1F5E1100D6C3AE /* CGSize-Extenstion.swift in Sources */,
-				EC3360A81F1F5E1100D6C3AE /* Date-Extension.swift in Sources */,
-				EC3360A91F1F5E1100D6C3AE /* Dispatch.swift in Sources */,
-				EC3360AA1F1F5E1100D6C3AE /* Event.swift in Sources */,
-				EC3360AB1F1F5E1100D6C3AE /* String-Extension.swift in Sources */,
-				EC3360AC1F1F5E1100D6C3AE /* URL-Extension.swift in Sources */,
+				EC272D23202F47AE0082A167 /* Date-Extension.swift in Sources */,
+				EC272D24202F47AE0082A167 /* Event.swift in Sources */,
+				EC272D25202F47AE0082A167 /* URL-Extension.swift in Sources */,
+				EC272D26202F47AE0082A167 /* Dispatch.swift in Sources */,
+				EC272D27202F47AE0082A167 /* String-Extension.swift in Sources */,
+				EC272D28202F47AE0082A167 /* Bool-Extension.swift in Sources */,
+				EC272D29202F47AE0082A167 /* CGRect-Extension.swift in Sources */,
+				EC272D2A202F47AE0082A167 /* Array-Extension.swift in Sources */,
+				EC272D2B202F47AE0082A167 /* CGSize-Extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1572,15 +1616,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7908A61DF8666A0081B51E /* Array-Extension.swift in Sources */,
-				EC7908A71DF8666A0081B51E /* Bool-Extension.swift in Sources */,
-				EC7908A81DF8666A0081B51E /* CGRect-Extension.swift in Sources */,
-				EC7908A91DF8666A0081B51E /* CGSize-Extenstion.swift in Sources */,
-				EC7908AA1DF8666A0081B51E /* Date-Extension.swift in Sources */,
-				EC7908AB1DF8666A0081B51E /* Dispatch.swift in Sources */,
-				EC7908AC1DF8666A0081B51E /* Event.swift in Sources */,
-				EC7908AD1DF8666A0081B51E /* String-Extension.swift in Sources */,
-				EC7908AE1DF8666A0081B51E /* URL-Extension.swift in Sources */,
+				EC29288F202F373100B8B759 /* Event.swift in Sources */,
+				EC292894202F373100B8B759 /* CGRect-Extension.swift in Sources */,
+				EC292896202F373100B8B759 /* CGSize-Extenstion.swift in Sources */,
+				EC29288E202F373100B8B759 /* Date-Extension.swift in Sources */,
+				EC292893202F373100B8B759 /* Bool-Extension.swift in Sources */,
+				EC292890202F373100B8B759 /* URL-Extension.swift in Sources */,
+				EC292895202F373100B8B759 /* Array-Extension.swift in Sources */,
+				EC292892202F373100B8B759 /* String-Extension.swift in Sources */,
+				EC292891202F373100B8B759 /* Dispatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1588,16 +1632,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7908C61DF8669A0081B51E /* UIApplication-Extension.swift in Sources */,
-				EC7908C71DF8669A0081B51E /* UIButton-Extension.swift in Sources */,
-				EC7908C81DF8669A0081B51E /* UIColor-Extension.swift in Sources */,
-				EC7908C91DF8669A0081B51E /* UIFont-Extension.swift in Sources */,
-				EC7908CA1DF8669A0081B51E /* UIImage-Extension.swift in Sources */,
-				EC7908CB1DF8669A0081B51E /* UILabel-Extension.swift in Sources */,
-				EC7908CC1DF8669A0081B51E /* UITableView-Extension.swift in Sources */,
-				EC7908CD1DF8669A0081B51E /* UITableViewCell-Extension.swift in Sources */,
-				EC7908CE1DF8669A0081B51E /* UIView-Extension.swift in Sources */,
-				EC7908CF1DF8669A0081B51E /* UIViewController-Extension.swift in Sources */,
+				EC2928FF202F401F00B8B759 /* UILabel-Extension.swift in Sources */,
+				EC292901202F401F00B8B759 /* UIColor-Extension.swift in Sources */,
+				EC2928FE202F401F00B8B759 /* UIButton-Extension.swift in Sources */,
+				EC292906202F401F00B8B759 /* UITableViewCell-Extension.swift in Sources */,
+				EC292904202F401F00B8B759 /* UIView-Extension.swift in Sources */,
+				EC292900202F401F00B8B759 /* UIApplication-Extension.swift in Sources */,
+				EC292905202F401F00B8B759 /* UIImage-Extension.swift in Sources */,
+				EC292903202F401F00B8B759 /* UIViewController-Extension.swift in Sources */,
+				EC292902202F401F00B8B759 /* UIFont-Extension.swift in Sources */,
+				EC292907202F401F00B8B759 /* UITableView-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1675,14 +1719,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05E3C6CD1CEFBD1B00BAFE1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05E3C6CE1CEFBD1B00BAFE1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05E3C6D21CEFBD1B00BAFE1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1702,14 +1738,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1752,14 +1794,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1897,7 +1945,6 @@
 		};
 		05E3C6E41CEFBDBB00BAFE1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1908,7 +1955,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SodiumCocoa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumCocoa/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1924,7 +1971,6 @@
 		};
 		05E3C6E51CEFBDBB00BAFE1D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1935,7 +1981,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SodiumCocoa/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumCocoa/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1951,6 +1997,7 @@
 		05E3C7011CEFF53900BAFE1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEVELOPMENT_TEAM = ND6GWCAG35;
 				INFOPLIST_FILE = SodiumCocoaTests/Info.plist;
@@ -1965,6 +2012,7 @@
 		05E3C7021CEFF53900BAFE1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEVELOPMENT_TEAM = ND6GWCAG35;
 				INFOPLIST_FILE = SodiumCocoaTests/Info.plist;
@@ -1988,7 +2036,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumSwift copy-Info.plist";
+				INFOPLIST_FILE = "SodiumSwift-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -2017,7 +2065,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumSwift copy-Info.plist";
+				INFOPLIST_FILE = "SodiumSwift-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SodiumSwift;
@@ -2034,7 +2082,6 @@
 		};
 		EC2890231F1624BE000FB227 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19D322C800F4AC5B9E7C8746 /* Pods-SodiumCocoa.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2045,7 +2092,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumCocoa copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumCocoa/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2062,7 +2109,6 @@
 		};
 		EC2890241F1624BE000FB227 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6883238F071F39D26175DB /* Pods-SodiumCocoa.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -2073,7 +2119,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumCocoa copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumCocoa/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2099,13 +2145,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommon copy-Info.plist";
+				INFOPLIST_FILE = "SwiftCommon-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
 				PRODUCT_NAME = SwiftCommon;
-				SDKROOT = iphoneos10.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -2127,13 +2173,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommon copy-Info.plist";
+				INFOPLIST_FILE = "SwiftCommon-tvOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
 				PRODUCT_NAME = SwiftCommon;
-				SDKROOT = iphoneos10.3;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 3.0;
@@ -2156,7 +2202,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommonIOS copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommonIOS/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2185,7 +2231,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommonIOS copy-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommonIOS/tvOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2261,7 +2307,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumSwift copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumSwift/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2292,7 +2338,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SodiumSwift copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumSwift/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2321,7 +2367,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommon copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommon/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2349,7 +2395,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "SwiftCommon copy2-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommon/macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2376,13 +2422,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SwiftCommon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommon/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos11.2;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 3.0;
@@ -2403,13 +2449,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SwiftCommon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommon/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unchartedworks.SwiftCommon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos11.2;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2431,7 +2477,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SwiftCommonIOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommonIOS/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2459,7 +2505,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SwiftCommonIOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCommonIOS/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2485,7 +2531,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SodiumSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumSwift/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -2514,7 +2560,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = SodiumSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SodiumSwift/iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

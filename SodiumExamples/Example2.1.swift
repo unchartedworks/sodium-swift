@@ -34,7 +34,6 @@ class Example21 : UIViewController {
         
         self.view.addSubview(text)
         
-        
         let close = UIButton()
         close.frame = CGRect(x: 50, y:130, width: 100, height: 30)
         close.setTitle("close", for: .normal)

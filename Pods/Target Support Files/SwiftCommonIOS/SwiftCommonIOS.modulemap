@@ -1,6 +1,0 @@
-framework module SwiftCommonIOS {
-  umbrella header "SwiftCommonIOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
