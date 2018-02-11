@@ -165,6 +165,20 @@
 			remoteGlobalIDString = 05E3C6DD1CEFBDBB00BAFE1D;
 			remoteInfo = SodiumCocoa;
 		};
+		EC2E4E5020305B160054825F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7908D41DF869D10081B51E;
+			remoteInfo = SodiumSwift;
+		};
+		EC2E4E5220305B310054825F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 055B91C21CD13D940048BC24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC288FF31F16227E000FB227;
+			remoteInfo = "SodiumSwift-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -619,6 +633,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EC2E4E5120305B160054825F /* PBXTargetDependency */,
 			);
 			name = SodiumCocoa;
 			productName = SodiumCocoa;
@@ -657,6 +672,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EC2E4E5320305B310054825F /* PBXTargetDependency */,
 			);
 			name = "SodiumCocoa-tvOS";
 			productName = SodiumCocoa;
@@ -1083,6 +1099,16 @@
 			isa = PBXTargetDependency;
 			target = 05E3C6DD1CEFBDBB00BAFE1D /* SodiumCocoa */;
 			targetProxy = EC2E4E4B20304D2C0054825F /* PBXContainerItemProxy */;
+		};
+		EC2E4E5120305B160054825F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7908D41DF869D10081B51E /* SodiumSwift */;
+			targetProxy = EC2E4E5020305B160054825F /* PBXContainerItemProxy */;
+		};
+		EC2E4E5320305B310054825F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC288FF31F16227E000FB227 /* SodiumSwift-tvOS */;
+			targetProxy = EC2E4E5220305B310054825F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
