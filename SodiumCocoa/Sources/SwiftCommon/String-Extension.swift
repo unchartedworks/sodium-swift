@@ -21,19 +21,19 @@ extension String {
     '''
     */
     public func stripCharacters(_ chars: Set<Character>) -> String {
-        return String(self.characters.filter({ !chars.contains($0)}))
+        return String(self.filter({ !chars.contains($0)}))
     }
     
     /// indexOf(ch)
     public func indexOf(_ char: Character) -> String.Index? {
-        return self.characters.index(of: char)
+        return self.index(of: char)
     }
     
     // spit out the string in ascii.  not sure how to make hex, it's decimal atm.
     public func toAsciiString() -> String {
         var rt = ""
         
-        for ch in characters {
+        for ch in self {
             rt += "\(ch) "
         }
         
@@ -44,7 +44,7 @@ extension String {
     public var countBytes: Int { return self.unicodeScalars.count }
     
     /// string length
-    public var length: Int { return self.characters.count }
+    public var length: Int { return self.count }
     
     /// easy NSRange for the string
     public var all: NSRange { get { return NSMakeRange(0, self.length) } }
@@ -67,7 +67,7 @@ extension String {
     
     /// get a substring the normal way
     public func substring(_ start: Int, end: Int) -> String {
-        let r = self.index(self.startIndex, offsetBy: start)..<self.characters.index(self.startIndex, offsetBy: end)
+        let r = self.index(self.startIndex, offsetBy: start)..<self.index(self.startIndex, offsetBy: end)
         return self.substring(with: r)
     }
     
@@ -84,7 +84,7 @@ extension String {
     /// return array of strings of every 2 chars
     public var pairs: [String] {
         var result: [String] = []
-        let chars = Array(characters)
+        let chars = Array(self)
         for index in stride(from: 0, to: chars.count, by: 2) {
             result.append(String(chars[index..<min(index+2, chars.count)]))
         }

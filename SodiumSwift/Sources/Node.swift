@@ -25,7 +25,7 @@ internal class INode : NSObject, Comparable
         node._rank = limit + 1
         for n in node.getListenerNodesUnsafe()
         {
-            ensureBiggerThan(n, limit: node.rank, visited: &visited)
+            _ = ensureBiggerThan(n, limit: node.rank, visited: &visited)
         }
 
         return true
@@ -107,7 +107,7 @@ internal class Node<T> : INode
         objc_sync_enter(INode.ListenersLock)
         defer { objc_sync_exit(INode.ListenersLock) }
 
-        self.listeners.remove(target)
+        _ = self.listeners.remove(target)
     }
 
     override func getListenerNodesUnsafe() -> [INode] {

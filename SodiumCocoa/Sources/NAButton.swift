@@ -103,7 +103,7 @@ open class NAButton : UIButton {
         print("NAButton deinit")
     }
     
-    func onclicked() {
+    @objc func onclicked() {
         clicked.send(Unit.value)
     }
     

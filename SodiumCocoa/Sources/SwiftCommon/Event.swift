@@ -79,7 +79,7 @@ extension EventType {
 }
 
 func notify<C: Collection>(_ events: C, ffwd: Bool, fired: inout Bool, fire: (C.Iterator.Element)->Void) -> [C.Iterator.Element] where C.Iterator.Element : EventType {
-    var rt: [C.Generator.Element] = []
+    var rt: [C.Iterator.Element] = []
     fired = false
     
     for e in events {
