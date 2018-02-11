@@ -8,7 +8,7 @@
 
 import Foundation
 import SodiumSwift
-import SwiftCommon
+
 
 open class NATableViewCell : UITableViewCell {
     

@@ -8,7 +8,7 @@
  */
 
 import UIKit
-import SwiftCommon
+
 
 extension UITableView {
     public func mergeData<T: Hashable>(new: [T], old: [T]) {

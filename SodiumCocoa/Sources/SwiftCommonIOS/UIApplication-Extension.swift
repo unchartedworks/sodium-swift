@@ -7,7 +7,7 @@
  - Copyright: © 2016 Belkin. All rights reserved.
 */
 
-import SwiftCommon
+
 #if TARGET_OS_IOS
 
 extension UIApplication {

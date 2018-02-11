@@ -8,7 +8,7 @@
 
 import UIKit
 import SodiumSwift
-import SwiftCommon
+
 
 open class NAButton : UIButton {
     public typealias Title = (String, UIControlState)

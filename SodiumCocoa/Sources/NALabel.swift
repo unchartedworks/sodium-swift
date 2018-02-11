@@ -9,7 +9,7 @@
 
 import UIKit
 import SodiumSwift
-import SwiftCommon
+
 
 open class NALabel : UILabel {
     var refs: MemReferences?
