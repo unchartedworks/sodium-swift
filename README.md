@@ -108,6 +108,7 @@ $ carthage update
 ```
         
 **Add the framework(s) to your project**
+
 **iOS**
 
 ./Carthage/Build/iOS/
