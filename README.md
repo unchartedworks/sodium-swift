@@ -109,12 +109,17 @@ $ carthage update
         
 **Add the framework(s) to your project**
 **iOS**
+
 ./Carthage/Build/iOS/
+
 SodiumSwift.framework
+
 SodiumCocoa.framework
 
 **macOS**
+
 ./Carthage/Build/Mac/
+
 SodiumSwift.framework
 
 
