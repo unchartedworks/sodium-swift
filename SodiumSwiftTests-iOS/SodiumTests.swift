@@ -9,7 +9,7 @@
 import XCTest
 @testable import SodiumSwift
 
-class SodiumTests: XCTestCase {
+class SodiumSwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

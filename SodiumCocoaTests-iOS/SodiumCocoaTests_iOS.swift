@@ -1,30 +1,23 @@
 //
-//  SodiumCocoaTests.swift
-//  SodiumCocoaTests
+//  SodiumCocoaTests_iOS.swift
+//  SodiumCocoaTests-iOS
 //
-//  Created by Andrew Bradnan on 5/20/16.
-//  Copyright © 2016 Whirlygig Ventures. All rights reserved.
+//  Created by Liang on 11/02/2018.
+//  Copyright © 2018 UnchartedWorks. All rights reserved.
 //
 
 import XCTest
-import Sodium
+import SodiumSwift
 import SodiumCocoa
 
-class SodiumCocoaTests: XCTestCase {
+class SodiumCocoaTests_iOS: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
@@ -33,20 +26,20 @@ class SodiumCocoaTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
+   
     func testRefs() {
         let refs = MemReferences()
         doTest(refs)
         
-        sleep(100)
+        sleep(5)
         XCTAssert(refs.count() == 0, "refs is still \(refs.count())")
     }
-
+    
     func doTest(_ refs: MemReferences) {
         let clear = NAButton("Clear", refs: refs)
         clear.frame = CGRect(x: 50,y: 30,width: 100,height: 30)
-        clear.setTitle("clear", forState: .Normal)
-        clear.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        clear.setTitle("clear", for: .normal)
+        clear.setTitleColor(UIColor.blue, for: .normal)
         
         let sClearIt = clear.clicked.map { _ in "" }
         //let sClearIt = Stream<String>()

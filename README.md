@@ -92,9 +92,7 @@ class QuestionViewController: UIViewController {
 **Add the frameworks to your iOS project**
 
 - SodiumSwift.framework
-- SwiftCommon.framework
 - SodiumCocoa.framework
-- SwiftCommonIOS.framework
 
 
 ### Build universal sodium-swift frameworks for macOS
@@ -103,6 +101,5 @@ class QuestionViewController: UIViewController {
 **Add the frameworks to your macOS project**
 
 - SodiumSwift.framework
-- SwiftCommon.framework
 
 

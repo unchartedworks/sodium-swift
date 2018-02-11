@@ -30,7 +30,7 @@ extension SodiumTests {
     
     func test_Operational_split() {
         let a = Transaction.noThrowRun{ StreamSink<[String]>() }
-        let b = Transaction.noThrowRun { _ in Operational.split(a) }
+        let b = Transaction.noThrowRun { () in Operational.split(a) }
         var b_0 = [String]()
         let b_0_l = Transaction.noThrowRun { b.listen{ b_0.append($0) } }
         

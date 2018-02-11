@@ -3,7 +3,7 @@
 //  SodiumExamples
 //
 //  Created by Liang on 10/02/2018.
-//  Copyright © 2018 Whirlygig Ventures. All rights reserved.
+//  Copyright © 2018 UnchartedWorks. All rights reserved.
 //
 
 import UIKit
