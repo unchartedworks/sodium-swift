@@ -9,7 +9,7 @@
 import XCTest
 @testable import SodiumSwift
 
-extension SodiumTests {
+extension SodiumSwiftTests {
     
     func testSendStream() {
         let e = StreamSink<Int>()

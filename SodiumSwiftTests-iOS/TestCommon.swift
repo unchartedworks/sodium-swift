@@ -9,7 +9,7 @@
 import XCTest
 @testable import SodiumSwift
 
-extension SodiumTests {
+extension SodiumSwiftTests {
 
     func test_Base_send1() {
         let s = Transaction.run { StreamSink<String>() }!

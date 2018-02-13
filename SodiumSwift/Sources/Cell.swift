@@ -2,6 +2,8 @@
  # Cell
  Represents a value that changes over time.
 */
+
+typealias SStream = SodiumSwift.Stream
 public protocol CellType {
     associatedtype Element
     var refs: MemReferences? { get }
@@ -225,6 +227,48 @@ open class CellBase<T> : CellType {
         return Transaction.Apply { trans in self.Updates(trans).Calm(mInitA, comparer).HoldLazy(initA) }
     }
 */
+    static func switchC<A>(_ bba: Cell<Cell<A>>) -> AnyCell<A> {
+        return Transaction.apply({ (trans: Transaction) in
+            let lazyInitialValue: Lazy<A> = bba.sampleLazy(trans).map({$0.sample()})
+            let out = StreamSink<A>()
+            var currentListener = Listener(unlisten: nop, refs: nil)
+            func handler(_ trans: Transaction, _ ba: Cell<A>) -> Void {
+                currentListener.unlisten()
+                currentListener = ba.value(trans).listen(out.node,
+                                                          trans: trans,
+                                                          action: out.send
+                    , suppressEarlierFirings: false)
+            }
+            
+            let newListener = bba.value(trans).listen(out.node, action: handler)
+            return out.lastFiringOnly(trans).unsafeAddCleanup(newListener).holdLazy(trans, lazy: lazyInitialValue)
+        })
+    }
+    
+    static func switchS<A>(_ bea: Cell<SStream<A>>) -> SodiumSwift.Stream<A> {
+        return Transaction.apply({(trans: Transaction) in
+            return Cell<A>.switchS(trans, bea)
+        })
+    }
+    
+    static func switchS<A>(_ trans: Transaction, _ bea: Cell<SStream<A>>) -> SStream<A> {
+        let out = StreamSink<A>()
+        var currentListener: Listener = Listener(unlisten: nop, refs: nil)
+        let h2  = {(_ trans: Transaction, _ ea: SStream<A>) -> Void in
+            currentListener.unlisten()
+            currentListener = ea.listen(out.node, trans: trans, action: out.send, suppressEarlierFirings: false)
+        }
+        let h1  = {(trans: Transaction, ea: SStream<A>) in
+            trans.last {
+                currentListener.unlisten()
+                currentListener = ea.listen(out.node, trans: trans, action: out.send, suppressEarlierFirings: true)
+            }
+        }
+        
+        trans.prioritized(out.node, action: { trans in h2(trans, bea.sampleNoTransaction()) })
+        let newListener = bea.updates(trans).listen(out.node, trans: trans, action: h1, suppressEarlierFirings: false)
+        return out.lastFiringOnly(trans).unsafeAddCleanup(newListener)
+    }
 }
 
 private class LazySample<C:CellType>
@@ -245,12 +289,12 @@ private class LazySample<C:CellType>
  */
 open class Cell<T>: CellBase<T> {
     fileprivate var cleanup: Listener = Listener(unlisten: nop, refs: nil)
-
+    
     public override init(value: T, refs: MemReferences? = nil) {
         super.init (value: value, refs: refs)
         self.cleanup = doListen(refs)
     }
-
+    
     public override init(stream: Stream<T>, initialValue: T, refs: MemReferences? = nil) {
         super.init(stream: stream, initialValue: initialValue, refs: refs)
         self.cleanup = doListen(refs)
@@ -267,7 +311,7 @@ open class Cell<T>: CellBase<T> {
                 }
                 self!._valueUpdate = a
                 }, suppressEarlierFirings: false,
-                refs: refs)
+                   refs: refs)
         }
     }
     
@@ -293,15 +337,15 @@ extension CellType {
         let ffa = { a in { b in f(a,b) }}
         return c2.apply(self.map(ffa))
     }
-
+    
     public func lift<C:CellType, TResult>(_ c2: C, f: @escaping (Element,C.Element) -> [TResult]) -> AnyCell<[TResult]> {
         let ffa = { a in { b in f(a,b) }}
         return c2.apply(self.map(ffa))
     }
-
+    
     /**
      Lift a ternary function into cells, so the returned cell always reflects the specified function applied to the input cells' values.
-
+     
      - Parameter C2: The type of second cell.
      - Parameter C3: The type of third cell.
      - Parameter TResult: The type of the result.
@@ -359,7 +403,7 @@ extension CellType {
     
     /**
      Lift a 6-argument function into cells, so the returned cell always reflects the specified function applied to the input cells' values.
-
+     
      - Parameter C2: The type of second cell.
      - Parameter C3: The type of third cell.
      - Parameter C4: The type of fourth cell.
@@ -382,7 +426,7 @@ extension CellType {
     
     /**
      Apply a value inside a cell to a function inside a cell.  This is the primitive for all function lifting.
-
+     
      - Parameter TResult: The type of the result.
      - Parameter C: The current CellType.
      - Parameter bf: The cell containing the function to apply the value to.
@@ -415,10 +459,10 @@ extension CellType {
                 }
             })
             return out.lastFiringOnly(trans0).unsafeAddCleanup([l1,l2,
-                Listener(unlisten: { inTarget.unlink(nodeTarget) }, refs: self.refs)]).holdLazy({ bf.sampleNoTransaction()(self.sampleNoTransaction()) })
+                                                                Listener(unlisten: { inTarget.unlink(nodeTarget) }, refs: self.refs)]).holdLazy({ bf.sampleNoTransaction()(self.sampleNoTransaction()) })
         }
     }
-
+    
     /**
      Listen for updates to the value of this cell.  The returned Listener may be disposed to stop listening.
      
@@ -431,24 +475,24 @@ extension CellType {
      
      If the Listener is not disposed, it will continue to listen until this cell is disposed.
      */
-  
+    
     public func listen(_ handler: @escaping Handler) -> Listener {
         return Transaction.apply{trans in self.value(trans).listen(self.refs, handler: handler)}!
     }
-
+    
     /**
      Transform the cell values according to the supplied function, so the returned cell's values reflect the value of the function applied to the input cell's values.
      
      - Parameter TResult: The type of values fired by the returned cell.
      - Parameter f: Function to apply to convert the values.  It must be a pure function.
-    
+     
      - Returns: An cell which fires values transformed by f() for each value fired by this cell.
      */
     public func map<TResult>(_ f: @escaping (Element) -> TResult) -> Cell<TResult>
     {
         let rt = Transaction.apply{ (trans: Transaction) in
             self.stream().map(f).hold(f(self.sample())) }
-
+        
         return rt
     }
     
@@ -467,5 +511,5 @@ extension CellType where Element : Equatable {
         let a = self.sampleNoTransaction()
         return AnyCell(self.stream().calm(a).hold(a))
     }
-   
+    
 }

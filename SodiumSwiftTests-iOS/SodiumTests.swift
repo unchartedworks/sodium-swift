@@ -502,12 +502,12 @@ class SodiumSwiftTests: XCTestCase {
     {
     defer { l.Unlisten() }
 
-    trigger.Send(100L)
-    c.Send(2)
-    trigger.Send(200L)
-    c.Send(9)
-    c.Send(1)
-    trigger.Send(300L)
+    trigger.send(100L)
+    c.send(2)
+    trigger.send(200L)
+    c.send(9)
+    c.send(1)
+    trigger.send(300L)
 }
     XCTAssert([] == out, "test() failed \(out)")
 CollectionAssert.AreEqual(new[] { "100 0", "200 2", "300 1" }, @out)
@@ -520,8 +520,8 @@ public async Task TestListenOnceTask()
 {
     let c = CellSink<Int>(9)
     Int result = await Transaction.Run(() => Operational.Value(c).ListenOnce())
-    c.Send(2)
-    c.Send(7)
+    c.send(2)
+    c.send(7)
     Assert.AreEqual(9, result)
 }
 
@@ -543,12 +543,12 @@ func testCalm2()
     using (Transaction.Run(() => c.Calm().Listen{ out.append($0) }))
     {
     defer { l.Unlisten() }
-        c.Send(4)
-        c.Send(2)
-        c.Send(4)
-        c.Send(4)
-        c.Send(2)
-        c.Send(2)
+        c.send(4)
+        c.send(2)
+        c.send(4)
+        c.send(4)
+        c.send(2)
+        c.send(2)
     }
     XCTAssert([] == out, "test() failed \(out)")
     CollectionAssert.AreEqual(new[] { 2, 4, 2, 4, 2 }, @out)
@@ -560,134 +560,125 @@ func testCalm2()
 [Test]
 [Test]
 
-private class Sc
-{
-    public readonly IMaybe<char> A
-    public readonly IMaybe<char> B
-    public readonly IMaybe<Cell<char>> Sw
+*/
+    struct Sc {
+        let a: Character?
+        let b: Character?
+        let sw: Cell<Character>?
+        
+        init(_ a: Character? = nil, _ b: Character? = nil, _ sw: Cell<Character>? = nil) {
+            self.a = a
+            self.b = b
+            self.sw = sw
+        }
+    }
     
-    public Sc(IMaybe<char> a, IMaybe<char> b, IMaybe<Cell<char>> sw)
-    {
-    this.A = a
-    this.B = b
-    this.Sw = sw
+    func testSwitchC() {
+        let ssc = StreamSink<Sc>()
+        // Split each field out of SB so we can update multiple behaviors in a
+        // single transaction.
+        let ca: Cell<Character> = ssc.map({s in s.a}).filterOptional().hold("A")
+        let cb: Cell<Character> = ssc.map({s in s.b}).filterOptional().hold("a")
+        let csw: Cell<Cell<Character>> = ssc.map({s in s.sw}).filterOptional().hold(ca)
+        let co = Cell<Character>.switchC(csw)
+        
+        var xs = [Character]()
+        let l = co.listen({xs.append($0)})
+        defer { l.unlisten() }
+        ssc.send(Sc(Optional.some("B"), Optional.some("B"), nil))
+        ssc.send(Sc(Optional.some("C"), Optional.some("C"), Optional.some(cb)))
+        ssc.send(Sc(Optional.some("D"), Optional.some("D"), nil))
+        ssc.send(Sc(Optional.some("E"), Optional.some("E"), Optional.some(ca)))
+        ssc.send(Sc(Optional.some("F"), Optional.some("F"), nil))
+        ssc.send(Sc(nil, nil, Optional.some(cb)))
+        ssc.send(Sc(nil, nil, Optional.some(ca)))
+        ssc.send(Sc(Optional.some("G"), Optional.some("G"), Optional.some(cb)))
+        ssc.send(Sc(Optional.some("H"), Optional.some("H"), Optional.some(ca)))
+        ssc.send(Sc(Optional.some("I"), Optional.some("I"), Optional.some(ca)))
+        let ys: [Character] = ["A", "B", "C", "D", "E", "F", "F", "F", "G", "H", "I"]
+        XCTAssert(xs == ys)
     }
-}
 
-[Test]
-func testSwitchC()
-{
-    StreamSink<Sc> ssc = StreamSink<Sc>()
-    // Split each field out of SB so we can update multiple behaviors in a
-    // single transaction.
-    Cell<char> ca = ssc.Map(s => s.A).FilterMaybe().Hold('A')
-    Cell<char> cb = ssc.Map(s => s.B).FilterMaybe().Hold('a')
-    Cell<Cell<char>> csw = ssc.Map(s => s.Sw).FilterMaybe().Hold(ca)
-    Cell<char> co = csw.SwitchC()
-    Array<char> @out = Array<char>()
-    using (co.Listen{ out.append($0) })
-    {
-    defer { l.Unlisten() }
-        ssc.Send(Sc(Maybe.Just('B'), Maybe.Just('b'), Maybe.Nothing<Cell<char>>()))
-        ssc.Send(Sc(Maybe.Just('C'), Maybe.Just('c'), Maybe.Just(cb)))
-        ssc.Send(Sc(Maybe.Just('D'), Maybe.Just('d'), Maybe.Nothing<Cell<char>>()))
-        ssc.Send(Sc(Maybe.Just('E'), Maybe.Just('e'), Maybe.Just(ca)))
-        ssc.Send(Sc(Maybe.Just('F'), Maybe.Just('f'), Maybe.Nothing<Cell<char>>()))
-        ssc.Send(Sc(Maybe.Nothing<char>(), Maybe.Nothing<char>(), Maybe.Just(cb)))
-        ssc.Send(Sc(Maybe.Nothing<char>(), Maybe.Nothing<char>(), Maybe.Just(ca)))
-        ssc.Send(Sc(Maybe.Just('G'), Maybe.Just('g'), Maybe.Just(cb)))
-        ssc.Send(Sc(Maybe.Just('H'), Maybe.Just('h'), Maybe.Just(ca)))
-        ssc.Send(Sc(Maybe.Just('I'), Maybe.Just('i'), Maybe.Just(ca)))
+    private struct Sc2 {
+        let c : CellSink<Int>
+        init(_ n: Int) {
+            self.c = CellSink<Int>(n)
+        }
     }
-    CollectionAssert.AreEqual(new[] { 'A', 'B', 'c', 'd', 'E', 'F', 'f', 'F', 'g', 'H', 'I' }, @out)
-}
-
-private class Sc2
-{
-    public readonly CellSink<Int> C
     
-    public Sc2(Int initialValue)
-    {
-    this.C = CellSink<Int>(initialValue)
+    func testSwitchCSimultaneous() {
+        let sc1 = Sc2(0)
+        let csc = CellSink<Sc2>(sc1)
+        let co  = Cell<Int>.switchC(csc.map({b in b.c}))
+        var xs  = [Int]()
+        let l   = co.listen({xs.append($0)})
+        defer { l.unlisten() }
+        let sc2 = Sc2(3)
+        let sc3 = Sc2(4)
+        let sc4 = Sc2(7)
+        
+        sc1.c.send(1)
+        sc1.c.send(2)
+        csc.send(sc2)
+        sc1.c.send(3)
+        sc2.c.send(4)
+        sc3.c.send(5)
+        csc.send(sc3)
+        sc3.c.send(6)
+        sc3.c.send(7)
+        Transaction.runVoid({
+                    sc3.c.send(2)
+                    csc.send(sc4)
+                    sc4.c.send(8)
+                })
+        sc4.c.send(9)
+        let ys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        XCTAssert(xs == ys, "test() failed xs = \(xs), ys = \(ys)")
     }
-}
-
-[Test]
-func testSwitchCSimultaneous()
-{
-    Sc2 sc1 = Sc2(0)
-    CellSink<Sc2> csc = CellSink<Sc2>(sc1)
-    Cell<Int> co = csc.Map<Cell<Int>>(b => b.C).SwitchC()
-    Array<Int> @out = Array<Int>()
-    using (co.Listen{ out.append($0) })
-    {
-    defer { l.Unlisten() }
-        Sc2 sc2 = Sc2(3)
-        Sc2 sc3 = Sc2(4)
-        Sc2 sc4 = Sc2(7)
-        sc1.C.Send(1)
-        sc1.C.Send(2)
-        csc.Send(sc2)
-        sc1.C.Send(3)
-        sc2.C.Send(4)
-        sc3.C.Send(5)
-        csc.Send(sc3)
-        sc3.C.Send(6)
-        sc3.C.Send(7)
-        Transaction.RunVoid(() =>
-            {
-                sc3.C.Send(2)
-                csc.Send(sc4)
-                sc4.C.Send(8)
-            })
-        sc4.C.Send(9)
-    }
-    XCTAssert([] == out, "test() failed \(out)")
-    CollectionAssert.AreEqual(new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, @out)
-}
-
-private class Ss
-{
-    public readonly char A
-    public readonly char B
-    public readonly IMaybe<Stream<char>> Sw
     
-    public Ss(char a, char b, IMaybe<Stream<char>> sw)
-    {
-    this.A = a
-    this.B = b
-    this.Sw = sw
+     private struct Ss {
+        let a: Character
+        let b: Character
+        let sw: SodiumSwift.Stream<Character>?
+     
+        init(_ a: Character, _ b: Character, _ sw: SodiumSwift.Stream<Character>?) {
+            self.a  = a
+            self.b  = b
+            self.sw = sw
+        }
     }
-}
+    
+    func testSwitchS() {
+        let sss = StreamSink<Ss>()
+        // Split each field out of SB so we can update multiple behaviors in a
+        // single transaction.
+        let sa  = sss.map({$0.a})
+        let sb  = sss.map({$0.b})
+        let csw = sss.map({$0.sw}).filterOptional().hold(sa)
+        let so: SodiumSwift.Stream<Character>  = Cell<Character>.switchS(csw)
+        var xs: [Character] = [Character]()
+        
+        func appendCharacter(_ c: Character) -> Void {
+            xs.append(c)
+        }
 
-[Test]
-func testSwitchS()
-{
-    StreamSink<Ss> sss = StreamSink<Ss>()
-    // Split each field out of SB so we can update multiple behaviors in a
-    // single transaction.
-    Stream<char> sa = sss.Map(s => s.A)
-    Stream<char> sb = sss.Map(s => s.B)
-    Cell<Stream<char>> csw = sss.Map(s => s.Sw).FilterMaybe().Hold(sa)
-    Stream<char> so = csw.SwitchS()
-    Array<char> @out = Array<char>()
-    using (so.Listen{ out.append($0) })
-    {
-    defer { l.Unlisten() }
-        sss.Send(Ss('A', 'a', Maybe.Nothing<Stream<char>>()))
-        sss.Send(Ss('B', 'b', Maybe.Nothing<Stream<char>>()))
-        sss.Send(Ss('C', 'c', Maybe.Just(sb)))
-        sss.Send(Ss('D', 'd', Maybe.Nothing<Stream<char>>()))
-        sss.Send(Ss('E', 'e', Maybe.Just(sa)))
-        sss.Send(Ss('F', 'f', Maybe.Nothing<Stream<char>>()))
-        sss.Send(Ss('G', 'g', Maybe.Just(sb)))
-        sss.Send(Ss('H', 'h', Maybe.Just(sa)))
-        sss.Send(Ss('I', 'i', Maybe.Just(sa)))
-    }
-    XCTAssert([] == out, "test() failed \(out)")
-    CollectionAssert.AreEqual(new[] { 'A', 'B', 'C', 'd', 'e', 'F', 'G', 'h', 'I' }, @out)
+        let l = so.listen(handler: appendCharacter)
+        //let l = so.listen({(c: Character) -> Void in xs.append(c)})
+        sss.send(Ss("A", "a", nil))
+        sss.send(Ss("B", "b", nil))
+        sss.send(Ss("C", "c", Optional.some(sb)))
+        sss.send(Ss("D", "d", nil))
+        sss.send(Ss("E", "e", Optional.some(sa)))
+        sss.send(Ss("F", "f", nil))
+        sss.send(Ss("G", "g", Optional.some(sb)))
+        sss.send(Ss("H", "h", Optional.some(sa)))
+        sss.send(Ss("I", "i", Optional.some(sa)))
+        
+        l.unlisten()
+        let ys: [Character] = ["A", "B", "C", "d", "e", "F", "G", "h", "I"]
+        XCTAssert(xs == ys, "test() failed xs = \(xs)")
 }
-
+/*
 private class Ss2
 {
     public readonly StreamSink<Int> S = StreamSink<Int>()
@@ -698,33 +689,33 @@ func testSwitchSSimultaneous()
 {
     Ss2 ss1 = Ss2()
     CellSink<Ss2> css = CellSink<Ss2>(ss1)
-    Stream<Int> so = css.Map<Stream<Int>>(b => b.S).SwitchS()
+    Stream<Int> so = css.map<Stream<Int>>(b => b.S).SwitchS()
     Array<Int> @out = Array<Int>()
     using (so.Listen{ out.append($0) })
     {
-    defer { l.Unlisten() }
+        defer { l.Unlisten() }
         Ss2 ss2 = Ss2()
         Ss2 ss3 = Ss2()
         Ss2 ss4 = Ss2()
-        ss1.S.Send(0)
-        ss1.S.Send(1)
-        ss1.S.Send(2)
-        css.Send(ss2)
-        ss1.S.Send(7)
-        ss2.S.Send(3)
-        ss2.S.Send(4)
-        ss3.S.Send(2)
-        css.Send(ss3)
-        ss3.S.Send(5)
-        ss3.S.Send(6)
-        ss3.S.Send(7)
+        ss1.S.send(0)
+        ss1.S.send(1)
+        ss1.S.send(2)
+        css.send(ss2)
+        ss1.S.send(7)
+        ss2.S.send(3)
+        ss2.S.send(4)
+        ss3.S.send(2)
+        css.send(ss3)
+        ss3.S.send(5)
+        ss3.S.send(6)
+        ss3.S.send(7)
         Transaction.RunVoid(() =>
             {
-                ss3.S.Send(8)
-                css.Send(ss4)
-                ss4.S.Send(2)
+                ss3.S.send(8)
+                css.send(ss4)
+                ss4.S.send(2)
             })
-        ss4.S.Send(9)
+        ss4.S.send(9)
     }
     XCTAssert([] == out, "test() failed \(out)")
     CollectionAssert.AreEqual(new[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, @out)
@@ -738,15 +729,15 @@ func testLiftList()
     Array<Int> @out = Array<Int>()
     using (sum.Listen{ out.append($0) })
     {
-    defer { l.Unlisten() }
-        cellSinks[4].Send(5)
-        cellSinks[5].Send(5)
+        defer { l.Unlisten() }
+        cellSinks[4].send(5)
+        cellSinks[5].send(5)
         Transaction.RunVoid(() =>
             {
-                cellSinks[9].Send(5)
-                cellSinks[17].Send(5)
-                cellSinks[41].Send(5)
-                cellSinks[48].Send(5)
+                cellSinks[9].send(5)
+                cellSinks[17].send(5)
+                cellSinks[41].send(5)
+                cellSinks[48].send(5)
             })
     }
     XCTAssert([] == out, "test() failed \(out)")
@@ -761,15 +752,15 @@ func testLiftListLarge()
     Array<Int> @out = Array<Int>()
     using (sum.Listen{ out.append($0) })
     {
-    defer { l.Unlisten() }
-        cellSinks[4].Send(5)
-        cellSinks[5].Send(5)
+        defer { l.Unlisten() }
+        cellSinks[4].send(5)
+        cellSinks[5].send(5)
         Transaction.RunVoid(() =>
             {
-                cellSinks[9].Send(5)
-                cellSinks[17].Send(5)
-                cellSinks[41].Send(5)
-                cellSinks[48].Send(5)
+                cellSinks[9].send(5)
+                cellSinks[17].send(5)
+                cellSinks[41].send(5)
+                cellSinks[48].send(5)
             })
     }
     XCTAssert([] == out, "test() failed \(out)")
@@ -784,17 +775,17 @@ func testLiftListLargeManyUpdates()
     Array<Int> @out = Array<Int>()
     using (sum.Listen{ out.append($0) })
     {
-    defer { l.Unlisten() }
+        defer { l.Unlisten() }
         for (Int i = 0 i < 100 i++)
         {
             Int n = i
-            cellSinks[n * 5].Send(5)
-            cellSinks[n * 5 + 1].Send(5)
+            cellSinks[n * 5].send(5)
+            cellSinks[n * 5 + 1].send(5)
             Transaction.RunVoid(() =>
                 {
-                    cellSinks[n * 5 + 2].Send(5)
-                    cellSinks[n * 5 + 3].Send(5)
-                    cellSinks[n * 5 + 4].Send(5)
+                    cellSinks[n * 5 + 2].send(5)
+                    cellSinks[n * 5 + 3].send(5)
+                    cellSinks[n * 5 + 4].send(5)
                 })
         }
     }
@@ -811,17 +802,17 @@ func testLiftListChangesWhileListening()
     Array<Int> @out = Array<Int>()
     IListener l = Transaction.Run(() =>
     {
-    cellSinks[4].Send(5)
+    cellSinks[4].send(5)
     IListener lLocal = sum.Listen{ out.append($0) }
-    cellSinks[5].Send(5)
+    cellSinks[5].send(5)
     return lLocal
     })
-    cellSinks[9].Send(5)
+    cellSinks[9].send(5)
     Transaction.RunVoid(() =>
     {
-    cellSinks[17].Send(5)
-    cellSinks[41].Send(5)
-    cellSinks[48].Send(5)
+    cellSinks[17].send(5)
+    cellSinks[41].send(5)
+    cellSinks[48].send(5)
     })
     l.Unlisten()
     XCTAssert([] == out, "test() failed \(out)")
