@@ -585,18 +585,18 @@ func testCalm2()
         var xs = [Character]()
         let l = co.listen({xs.append($0)})
         defer { l.unlisten() }
-        ssc.send(Sc(Optional.some("B"), Optional.some("B"), nil))
-        ssc.send(Sc(Optional.some("C"), Optional.some("C"), Optional.some(cb)))
-        ssc.send(Sc(Optional.some("D"), Optional.some("D"), nil))
-        ssc.send(Sc(Optional.some("E"), Optional.some("E"), Optional.some(ca)))
-        ssc.send(Sc(Optional.some("F"), Optional.some("F"), nil))
+        ssc.send(Sc(Optional.some("B"), Optional.some("b"), nil))
+        ssc.send(Sc(Optional.some("C"), Optional.some("c"), Optional.some(cb)))
+        ssc.send(Sc(Optional.some("D"), Optional.some("d"), nil))
+        ssc.send(Sc(Optional.some("E"), Optional.some("e"), Optional.some(ca)))
+        ssc.send(Sc(Optional.some("F"), Optional.some("f"), nil))
         ssc.send(Sc(nil, nil, Optional.some(cb)))
         ssc.send(Sc(nil, nil, Optional.some(ca)))
-        ssc.send(Sc(Optional.some("G"), Optional.some("G"), Optional.some(cb)))
-        ssc.send(Sc(Optional.some("H"), Optional.some("H"), Optional.some(ca)))
-        ssc.send(Sc(Optional.some("I"), Optional.some("I"), Optional.some(ca)))
-        let ys: [Character] = ["A", "B", "C", "D", "E", "F", "F", "F", "G", "H", "I"]
-        XCTAssert(xs == ys)
+        ssc.send(Sc(Optional.some("G"), Optional.some("g"), Optional.some(cb)))
+        ssc.send(Sc(Optional.some("H"), Optional.some("h"), Optional.some(ca)))
+        ssc.send(Sc(Optional.some("I"), Optional.some("i"), Optional.some(ca)))
+        let ys: [Character] = ["A", "B", "c", "d", "E", "F", "f", "F", "g", "H", "I"]
+        XCTAssert(xs == ys, "result = \(xs)")
     }
 
     private struct Sc2 {
