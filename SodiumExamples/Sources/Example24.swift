@@ -22,7 +22,7 @@ class Example24 : UIViewController {
         let first = CGRect(x:10, y:60, width:200, height:50)
         let second = CGRect(x:10, y:120, width:200, height:50)
         
-        let onegai = NAButton("Onegai shimasu")
+        let onegai = SButton("Onegai shimasu")
         onegai.frame = first
         onegai.setTitle("hello", for: UIControlState.normal)
         onegai.setTitleColor(UIColor.blue, for: .normal)
@@ -38,14 +38,14 @@ class Example24 : UIViewController {
 //        btn.isA
         self.view.addSubview(btn)
 
-        let thanks = NAButton("Thank you")
+        let thanks = SButton("Thank you")
         thanks.frame = second
         thanks.setTitleColor(UIColor.blue, for: .normal)
         
-        let sOnegai = onegai.clicked.map{ _ in "Onegai shimasu" }
-        let sThanks = thanks.clicked.map{ _ in "Thank you" }
+        let sOnegai = onegai.tap.map{ _ in "Onegai shimasu" }
+        let sThanks = thanks.tap.map{ _ in "Thank you" }
         let sCanned = sOnegai.orElse(sThanks)
-        let txt = NATextField(s: sCanned, text: "")
+        let txt = STextField(s: sCanned, text: "")
         
         //self.view.addSubview(onegai)
         self.view.addSubview(thanks)

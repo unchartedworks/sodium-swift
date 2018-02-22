@@ -28,7 +28,7 @@ open class Stream<T>
 
     deinit {
         if let r = self.refs { r.release() }
-        print("Stream<> deinit")
+        //print("Stream<> deinit")
     }
     
     public init(refs: MemReferences? = nil) {

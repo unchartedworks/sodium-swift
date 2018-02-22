@@ -316,7 +316,7 @@ open class Cell<T>: CellBase<T> {
     }
     
     deinit {
-        print("Cell<> deinit")
+        //print("Cell<> deinit")
         self.cleanup.unlisten()
     }
 }

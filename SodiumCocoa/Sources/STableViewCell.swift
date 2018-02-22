@@ -1,5 +1,5 @@
 /**
- # NATableViewCell.swift
+ # STableViewCell.swift
 ## Sodium
  
  - Author: Andrew Bradnan
@@ -10,7 +10,7 @@ import Foundation
 import SodiumSwift
 
 
-open class NATableViewCell : UITableViewCell {
+open class STableViewCell : UITableViewCell {
     
     fileprivate var hiddenListener: Listener?
     open var hiddenState: AnyCell<Bool> = AnyCell(Cell<Bool>(value: false)) {

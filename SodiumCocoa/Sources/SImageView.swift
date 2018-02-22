@@ -1,19 +1,17 @@
-/**
- # NALabel.swift
- ##  Sodium
- 
- - Author: Andrew Bradnan
- - Date: 5/31/16
- - Copyright:   Copyright © 2016 Whirlygig Ventures. All rights reserved.
- */
+//
+//  SImageView.swift
+//  Sodium
+//
+//  Created by Liang on 18/02/2018.
+//  Copyright © 2018 UnchartedWorks. All rights reserved.
+//
 
 import UIKit
 import SodiumSwift
 
-
-open class NALabel : UILabel {
+open class SImageView: UIImageView {
     var refs: MemReferences?
-
+    
     fileprivate var hiddenListener: Listener?
     open var hiddenState = Cell<Bool>(value: false) {
         didSet {
@@ -22,26 +20,26 @@ open class NALabel : UILabel {
             }
         }
     }
-
-    open var txt: Cell<String> {
+    
+    open var cImage: Cell<UIImage> {
         didSet{
-            self.l = Operational.updates(txt).listen(self.refs) { txt in
-                gui { self.text = txt }
+            self.l = Operational.updates(cImage).listen(self.refs) { image in
+                gui { self.image = image }
             }
             
             // Set the text at the end of the transaction so SLabel works
             // with CellLoops.
             Transaction.post{ _ in
                 DispatchQueue.main.async {
-                    self.text = self.txt.sample()
+                    self.image = self.cImage.sample()
                 }
             }
             
         }
     }
     
-    public init(txt: Cell<String>, refs: MemReferences? = nil ) {
-        self.txt = txt //Cell<String>(value: text, refs: refs)
+    public init(image: Cell<UIImage>, refs: MemReferences? = nil ) {
+        self.cImage = image
         self.refs = refs
         if let r = self.refs {
             r.addRef()
@@ -50,7 +48,7 @@ open class NALabel : UILabel {
     }
     
     public required init?(coder aDecoder: NSCoder) {
-        self.txt = Cell<String>(value: "", refs: nil)
+        self.cImage = Cell<UIImage>(value: UIImage(), refs: nil)
         super.init(coder: aDecoder)
     }
     
@@ -59,6 +57,5 @@ open class NALabel : UILabel {
     open func removeNotify() {
         l?.unlisten();
     }
+    
 }
-
-

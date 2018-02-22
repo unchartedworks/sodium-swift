@@ -20,15 +20,14 @@ class Example21 : UIViewController {
     
     override func viewDidLoad() {
         
-        let clear = NAButton("Clear", refs: refs)
+        let clear = SButton("Clear", refs: refs)
         clear.frame = CGRect(x: 50, y:30, width: 100, height: 30)
         clear.setTitle("clear", for: .normal)
         clear.setTitleColor(UIColor.blue, for: .normal)
         self.view.addSubview(clear)
 
-        //let sClearIt = clear.clicked.map { _ in "" }
         let sClearIt = SodiumSwift.Stream<String>()
-        let text = NATextField(s: sClearIt, text: "Hello", refs: refs)
+        let text = STextField(s: sClearIt, text: "Hello", refs: refs)
         text.text = "Hello2"
         text.frame = CGRect(x:10, y: 50, width:100, height: 20)
         

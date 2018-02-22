@@ -36,14 +36,14 @@ class SodiumCocoaTests_iOS: XCTestCase {
     }
     
     func doTest(_ refs: MemReferences) {
-        let clear = NAButton("Clear", refs: refs)
+        let clear = SButton("Clear", refs: refs)
         clear.frame = CGRect(x: 50,y: 30,width: 100,height: 30)
         clear.setTitle("clear", for: .normal)
         clear.setTitleColor(UIColor.blue, for: .normal)
         
-        let sClearIt = clear.clicked.map { _ in "" }
+        let sClearIt = clear.tap.map { _ in "" }
         //let sClearIt = Stream<String>()
-        let text = NATextField(s: sClearIt, text: "Hello", refs: refs)
+        let text = STextField(s: sClearIt, text: "Hello", refs: refs)
         text.text = "Hello2"
         text.frame = CGRect(x: 10,y: 50,width: 100,height: 20)
     }
