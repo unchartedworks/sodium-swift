@@ -25,9 +25,9 @@ open class SCollectionView: UICollectionView {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        self.csItems = CellSink<[SectionModel<Any, Any>]>(self.items, refs: self.refs)
-        self.userChanges     = csItems.stream()
-        self.l               = self.listen()
+        self.csItems      = CellSink<[SectionModel<Any, Any>]>(self.items, refs: self.refs)
+        self.userChanges  = csItems.stream()
+        self.l            = self.listen()
     }
     
     deinit {

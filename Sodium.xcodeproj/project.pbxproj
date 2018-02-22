@@ -166,6 +166,9 @@
 		EC9F0B1A203A13800038345C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F0B19203A13800038345C /* SearchViewController.swift */; };
 		EC9F0B1C203A143C0038345C /* SSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9F0B1B203A143B0038345C /* SSearchBar.swift */; };
 		ECB2453D202F9B980070EA3E /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2453C202F9B980070EA3E /* RootTableViewController.swift */; };
+		ECCF3E9D203F494B00C84EAF /* SSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3E9C203F494B00C84EAF /* SSegmentedControl.swift */; };
+		ECCF3E9E203F494B00C84EAF /* SSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3E9C203F494B00C84EAF /* SSegmentedControl.swift */; };
+		ECCF3EA0203F4EEC00C84EAF /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCF3E9F203F4EEC00C84EAF /* SegmentViewController.swift */; };
 		ECFABFBA2039928800DE8112 /* SImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFABFB92039928800DE8112 /* SImageView.swift */; };
 		ECFABFBB2039928800DE8112 /* SImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFABFB92039928800DE8112 /* SImageView.swift */; };
 		ECFABFBD2039947A00DE8112 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFABFBC2039947A00DE8112 /* GalleryViewController.swift */; };
@@ -331,6 +334,8 @@
 		EC9F0B19203A13800038345C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		EC9F0B1B203A143B0038345C /* SSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSearchBar.swift; sourceTree = "<group>"; };
 		ECB2453C202F9B980070EA3E /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		ECCF3E9C203F494B00C84EAF /* SSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSegmentedControl.swift; sourceTree = "<group>"; };
+		ECCF3E9F203F4EEC00C84EAF /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		ECFABFB92039928800DE8112 /* SImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SImageView.swift; sourceTree = "<group>"; };
 		ECFABFBC2039947A00DE8112 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -555,6 +560,7 @@
 				EC077678203B412F00C22B3C /* SSwitch.swift */,
 				EC1DB630203C2DF900105D54 /* STableView.swift */,
 				EC2A1135203DD7C6005108F8 /* SCollectionView.swift */,
+				ECCF3E9C203F494B00C84EAF /* SSegmentedControl.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -654,6 +660,7 @@
 				05C680E61CFE205F00B41A45 /* Example22.swift */,
 				05E150421CFF9C6F008AB9B3 /* Example24.swift */,
 				ECB2453C202F9B980070EA3E /* RootTableViewController.swift */,
+				ECCF3E9F203F4EEC00C84EAF /* SegmentViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1015,6 +1022,7 @@
 			files = (
 				EC2A3CDD203DDEE1000749D9 /* CollectionViewController.swift in Sources */,
 				ECFABFBD2039947A00DE8112 /* GalleryViewController.swift in Sources */,
+				ECCF3EA0203F4EEC00C84EAF /* SegmentViewController.swift in Sources */,
 				EC5FF03C2030B9E000F66367 /* CurrencyConverterViewController.swift in Sources */,
 				05E150431CFF9C6F008AB9B3 /* Example24.swift in Sources */,
 				05E3C6F11CEFD26A00BAFE1D /* Example2.1.swift in Sources */,
@@ -1042,6 +1050,7 @@
 				EC9F0B1C203A143C0038345C /* SSearchBar.swift in Sources */,
 				EC04DBFB203042A100B2C271 /* UILabel-Extension.swift in Sources */,
 				EC32F31F2039D64B005A6DC8 /* SDatePicker.swift in Sources */,
+				ECCF3E9D203F494B00C84EAF /* SSegmentedControl.swift in Sources */,
 				EC04DBFC203042A100B2C271 /* UIApplication-Extension.swift in Sources */,
 				EC077679203B412F00C22B3C /* SSwitch.swift in Sources */,
 				EC04DBFD203042A100B2C271 /* UIColor-Extension.swift in Sources */,
@@ -1114,6 +1123,7 @@
 				EC04DC11203045AA00B2C271 /* UIFont-Extension.swift in Sources */,
 				EC04DC12203045AA00B2C271 /* UIViewController-Extension.swift in Sources */,
 				EC04DC13203045AA00B2C271 /* UIView-Extension.swift in Sources */,
+				ECCF3E9E203F494B00C84EAF /* SSegmentedControl.swift in Sources */,
 				EC04DC14203045AA00B2C271 /* UIImage-Extension.swift in Sources */,
 				EC04DC15203045AA00B2C271 /* UITableViewCell-Extension.swift in Sources */,
 				EC077677203AE94500C22B3C /* SSearchBar.swift in Sources */,

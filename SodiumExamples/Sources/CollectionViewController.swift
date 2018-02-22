@@ -49,18 +49,21 @@ extension CollectionViewController {
 extension CollectionViewController: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
+        //Header View
         func createHeaderView(_ kind: String, _ indexPath: IndexPath) -> UICollectionReusableView {
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) as! SimpleHeaderView
             view.textLabel.text = self.collectionView.items[indexPath.section].section as? String
             view.backgroundColor = UIColor.lightGray
             return view
         }
-        
+       
+        //Footer View
         func createFooterView(_ kind: String, _ indexPath: IndexPath) -> UICollectionReusableView {
             let view = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footerView", for: indexPath)
             return view
         }
         
+        //Create View
         switch kind {
         case UICollectionElementKindSectionHeader:
             return createHeaderView(kind, indexPath)
