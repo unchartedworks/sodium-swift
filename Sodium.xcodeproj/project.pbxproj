@@ -59,6 +59,8 @@
 		EC077679203B412F00C22B3C /* SSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC077678203B412F00C22B3C /* SSwitch.swift */; };
 		EC07767A203B412F00C22B3C /* SSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC077678203B412F00C22B3C /* SSwitch.swift */; };
 		EC07767C203B435500C22B3C /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC07767B203B435400C22B3C /* SwitchViewController.swift */; };
+		EC0CF28A204070850074E1C5 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CF289204070850074E1C5 /* ActivityIndicatorViewController.swift */; };
+		EC0CF28C204071C40074E1C5 /* SActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0CF28B204071C10074E1C5 /* SActivityIndicatorView.swift */; };
 		EC1DB631203C2DF900105D54 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DB630203C2DF900105D54 /* STableView.swift */; };
 		EC1DB632203C2DF900105D54 /* STableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DB630203C2DF900105D54 /* STableView.swift */; };
 		EC1DB634203C32F500105D54 /* SimpleTableAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1DB633203C32F500105D54 /* SimpleTableAViewController.swift */; };
@@ -274,6 +276,8 @@
 		EC077674203AE7BC00C22B3C /* SilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilderViewController.swift; sourceTree = "<group>"; };
 		EC077678203B412F00C22B3C /* SSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSwitch.swift; sourceTree = "<group>"; };
 		EC07767B203B435400C22B3C /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		EC0CF289204070850074E1C5 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		EC0CF28B204071C10074E1C5 /* SActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SActivityIndicatorView.swift; sourceTree = "<group>"; };
 		EC1DB630203C2DF900105D54 /* STableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STableView.swift; sourceTree = "<group>"; };
 		EC1DB633203C32F500105D54 /* SimpleTableAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableAViewController.swift; sourceTree = "<group>"; };
 		EC272D5A202F4E850082A167 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -561,6 +565,7 @@
 				EC1DB630203C2DF900105D54 /* STableView.swift */,
 				EC2A1135203DD7C6005108F8 /* SCollectionView.swift */,
 				ECCF3E9C203F494B00C84EAF /* SSegmentedControl.swift */,
+				EC0CF28B204071C10074E1C5 /* SActivityIndicatorView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -661,6 +666,7 @@
 				05E150421CFF9C6F008AB9B3 /* Example24.swift */,
 				ECB2453C202F9B980070EA3E /* RootTableViewController.swift */,
 				ECCF3E9F203F4EEC00C84EAF /* SegmentViewController.swift */,
+				EC0CF289204070850074E1C5 /* ActivityIndicatorViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -1033,6 +1039,7 @@
 				EC077675203AE7BC00C22B3C /* SilderViewController.swift in Sources */,
 				EC5FF03A2030AD6900F66367 /* CounterBViewController.swift in Sources */,
 				EC9F0B1A203A13800038345C /* SearchViewController.swift in Sources */,
+				EC0CF28A204070850074E1C5 /* ActivityIndicatorViewController.swift in Sources */,
 				EC2C63122039EA0B00C9E0D1 /* DatePickerViewController.swift in Sources */,
 				EC1DB634203C32F500105D54 /* SimpleTableAViewController.swift in Sources */,
 				05E3C6C81CEFBD1B00BAFE1D /* AppDelegate.swift in Sources */,
@@ -1062,6 +1069,7 @@
 				EC04DC03203042A100B2C271 /* UITableView-Extension.swift in Sources */,
 				EC04DBF12030429200B2C271 /* Date-Extension.swift in Sources */,
 				EC04DBF22030429200B2C271 /* Event.swift in Sources */,
+				EC0CF28C204071C40074E1C5 /* SActivityIndicatorView.swift in Sources */,
 				ECFABFBA2039928800DE8112 /* SImageView.swift in Sources */,
 				EC1DB631203C2DF900105D54 /* STableView.swift in Sources */,
 				EC04DBF32030429200B2C271 /* URL-Extension.swift in Sources */,

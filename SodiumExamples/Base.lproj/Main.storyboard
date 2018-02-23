@@ -217,8 +217,28 @@
                                             <segue destination="eSs-ZO-td0" kind="show" id="Scw-hE-5Ml"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mA4-u9-Mi6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9Zc-L5-YMi" userLabel="ActivityIndicator">
                                         <rect key="frame" x="0.0" y="396" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Zc-L5-YMi" id="cZ1-Ew-IxX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ActivityIndicator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUJ-Gf-4NG" userLabel="Item">
+                                                    <rect key="frame" x="16" y="5" width="343" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="p7h-c4-CMA" kind="show" id="9A0-fS-fcm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mA4-u9-Mi6">
+                                        <rect key="frame" x="0.0" y="440" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mA4-u9-Mi6" id="4UY-8K-9oq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -238,7 +258,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hb9-QY-1Nd">
-                                        <rect key="frame" x="0.0" y="440" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="484" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hb9-QY-1Nd" id="EjD-4N-Rzq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -258,7 +278,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZEq-Nk-5dV">
-                                        <rect key="frame" x="0.0" y="484" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="528" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZEq-Nk-5dV" id="mpM-sx-myg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -575,7 +595,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gsj-jP-wqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3104.8000000000002" y="367.46626686656674"/>
+            <point key="canvasLocation" x="3182" y="367"/>
+        </scene>
+        <!--Activity Indicator View Controller-->
+        <scene sceneID="pWy-fy-nCU">
+            <objects>
+                <viewController id="p7h-c4-CMA" customClass="ActivityIndicatorViewController" customModule="SodiumExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xaI-D8-y1n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xyp-qg-Ymg" customClass="SActivityIndicatorView" customModule="SodiumCocoa">
+                                <rect key="frame" x="177" y="195" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpS-0N-wSo" customClass="SButton" customModule="SodiumCocoa">
+                                <rect key="frame" x="93" y="77" width="189" height="30"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-fz-3P4" customClass="SButton" customModule="SodiumCocoa">
+                                <rect key="frame" x="93" y="128" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kpS-0N-wSo" firstAttribute="top" secondItem="oW3-L5-TIb" secondAttribute="top" constant="77" id="5Js-4i-vhE"/>
+                            <constraint firstItem="xyp-qg-Ymg" firstAttribute="top" secondItem="kpS-0N-wSo" secondAttribute="bottom" constant="88" id="Ema-7T-gVX"/>
+                            <constraint firstItem="kpS-0N-wSo" firstAttribute="leading" secondItem="oW3-L5-TIb" secondAttribute="leading" constant="93" id="SOO-fg-gdM"/>
+                            <constraint firstItem="kpS-0N-wSo" firstAttribute="centerX" secondItem="xyp-qg-Ymg" secondAttribute="centerX" id="VgS-4m-Hic"/>
+                            <constraint firstItem="xyp-qg-Ymg" firstAttribute="centerX" secondItem="xaI-D8-y1n" secondAttribute="centerX" id="nCS-yu-Lr5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oW3-L5-TIb"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="activityIndictorView" destination="xyp-qg-Ymg" id="EpI-9L-Dz0"/>
+                        <outlet property="runButton" destination="kpS-0N-wSo" id="Xdm-AK-hw8"/>
+                        <outlet property="stopButton" destination="hGU-fz-3P4" id="UyX-6q-d83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXj-BP-rsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3997.5999999999999" y="359.37031484257875"/>
         </scene>
         <!--Gallery View Controller-->
         <scene sceneID="tcA-fB-Seb">
