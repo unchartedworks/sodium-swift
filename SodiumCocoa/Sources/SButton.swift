@@ -49,7 +49,7 @@ open class SButton : UIButton {
             }
         }
     }
-    
+
     open var cTitle: Cell<Title> {
         didSet {
             self.txtListener = Operational.updates(cTitle).listen(self.refs) { txt in
@@ -57,26 +57,26 @@ open class SButton : UIButton {
             }
         }
     }
-    
-    
+
+
     public convenience init(_ txt: Cell<Title>, refs: MemReferences? = nil) {
         self.init(type: .system, refs: refs)
-        
+
         self.cTitle = txt
         self.layer.borderColor = UIColor.red.cgColor
         self.sizeToFit()
         self.addTarget(self, action: #selector(SButton.onTapped), for: .touchUpInside)
     }
-    
+
     public convenience init(_ text: String, refs: MemReferences? = nil) {
         self.init(type: .system, refs: refs)
-        
+
         self.titleLabel!.text = text
         self.layer.borderColor = UIColor.red.cgColor
         self.sizeToFit()
         self.addTarget(self, action: #selector(SButton.onTapped), for: .touchUpInside)
     }
-    
+
     init(type: UIButtonType, refs: MemReferences? = nil) {
         self.tap = StreamSink<SodiumSwift.Unit>(refs: refs)
         self.refs = refs
@@ -86,23 +86,23 @@ open class SButton : UIButton {
         self.cTitle = Cell<Title>(value: empty, refs: refs)
         super.init(frame: CGRect(x:0,y:0,width:10,height:10))
     }
-    
+
     required public init?(coder aDecoder: NSCoder) {
         self.refs = nil
         self.tap = StreamSink<SodiumSwift.Unit>(refs: nil)
         self.cTitle = Cell<Title>(value: empty, refs: nil)
         super.init(coder: aDecoder)
-     
+
         self.setTitleColor(UIColor.lightGray, for: .disabled)
         self.addTarget(self, action: #selector(SButton.onTapped), for: .touchUpInside)
     }
-    
+
     deinit {
         if let r = self.refs { r.release() }
     }
-    
+
     @objc func onTapped() {
         tap.send(Unit.value)
     }
-    
+
 }

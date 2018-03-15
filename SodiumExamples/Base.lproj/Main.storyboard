@@ -605,11 +605,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xyp-qg-Ymg" customClass="SActivityIndicatorView" customModule="SodiumCocoa">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xyp-qg-Ymg" customClass="SActivityIndicatorView" customModule="SodiumCocoa">
                                 <rect key="frame" x="177" y="195" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpS-0N-wSo" customClass="SButton" customModule="SodiumCocoa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpS-0N-wSo" customClass="SButton" customModule="SodiumCocoa">
                                 <rect key="frame" x="93" y="77" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Run">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -617,7 +619,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-fz-3P4" customClass="SButton" customModule="SodiumCocoa">
                                 <rect key="frame" x="93" y="128" width="189" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -625,13 +627,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="kpS-0N-wSo" firstAttribute="top" secondItem="oW3-L5-TIb" secondAttribute="top" constant="77" id="5Js-4i-vhE"/>
-                            <constraint firstItem="xyp-qg-Ymg" firstAttribute="top" secondItem="kpS-0N-wSo" secondAttribute="bottom" constant="88" id="Ema-7T-gVX"/>
-                            <constraint firstItem="kpS-0N-wSo" firstAttribute="leading" secondItem="oW3-L5-TIb" secondAttribute="leading" constant="93" id="SOO-fg-gdM"/>
-                            <constraint firstItem="kpS-0N-wSo" firstAttribute="centerX" secondItem="xyp-qg-Ymg" secondAttribute="centerX" id="VgS-4m-Hic"/>
-                            <constraint firstItem="xyp-qg-Ymg" firstAttribute="centerX" secondItem="xaI-D8-y1n" secondAttribute="centerX" id="nCS-yu-Lr5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oW3-L5-TIb"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
