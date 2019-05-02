@@ -15,7 +15,7 @@ open class SSegmentedControl: UISegmentedControl {
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.addTarget(self, action: #selector(SSegmentedControl.valueDidChange), for:UIControlEvents.valueChanged)
+        self.addTarget(self, action: #selector(SSegmentedControl.valueDidChange), for:UIControl.Event.valueChanged)
     }
     
     deinit {

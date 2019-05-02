@@ -1,7 +1,7 @@
 
 open class LazyCell<T> : CellType
 {
-    open let refs: MemReferences?
+    public let refs: MemReferences?
     internal var cleanup: Listener = Listener(unlisten: nop, refs: nil)
     internal let _stream: Stream<T>
     internal var LazyInitialValue: Lazy<T>

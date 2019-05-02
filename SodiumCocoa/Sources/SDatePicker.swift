@@ -43,7 +43,7 @@ open class SDatePicker: UIDatePicker {
         self.userChanges    = csDate.stream() // didSet doesn't work in init()
         self.l              = self.listen()
         
-        self.addTarget(self, action: #selector(SDatePicker.dateDidChange), for:UIControlEvents.valueChanged)
+        self.addTarget(self, action: #selector(SDatePicker.dateDidChange), for:UIControl.Event.valueChanged)
     }
     
     deinit {

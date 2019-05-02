@@ -10,8 +10,8 @@ import UIKit
 import SodiumSwift
 
 open class SButton : UIButton {
-    public typealias Title = (String, UIControlState)
-    fileprivate let empty : Title = ("", UIControlState())
+    public typealias Title = (String, UIControl.State)
+    fileprivate let empty : Title = ("", UIControl.State())
 
     fileprivate var enabledListener: Listener?
     open var cEnabledState = AnyCell<Bool>(Cell<Bool>(value: false)) {
@@ -37,7 +37,7 @@ open class SButton : UIButton {
     let refs: MemReferences?
     fileprivate var txtListener: Listener?
 
-    open let tap: StreamSink<SodiumSwift.Unit>
+    public let tap: StreamSink<SodiumSwift.Unit>
     open var text: Title {
         get {
             return cTitle.sample()
@@ -77,7 +77,7 @@ open class SButton : UIButton {
         self.addTarget(self, action: #selector(SButton.onTapped), for: .touchUpInside)
     }
 
-    init(type: UIButtonType, refs: MemReferences? = nil) {
+    init(type: UIButton.ButtonType, refs: MemReferences? = nil) {
         self.tap = StreamSink<SodiumSwift.Unit>(refs: refs)
         self.refs = refs
         if let r = self.refs {

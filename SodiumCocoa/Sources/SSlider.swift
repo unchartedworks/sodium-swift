@@ -44,7 +44,7 @@ open class SSlider: UISlider {
         self.userChanges    = csValue.stream() // didSet doesn't work in init()
         self.l              = self.listen()
         
-        self.addTarget(self, action: #selector(SSlider.valueDidChange), for:UIControlEvents.valueChanged)
+        self.addTarget(self, action: #selector(SSlider.valueDidChange), for:UIControl.Event.valueChanged)
     }
     
     deinit {

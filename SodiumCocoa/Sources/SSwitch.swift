@@ -44,7 +44,7 @@ open class SSwitch: UISwitch {
         self.userChanges    = csValue.stream()
         self.l              = self.listen()
         
-        self.addTarget(self, action: #selector(SSwitch.valueDidChange), for:UIControlEvents.valueChanged)
+        self.addTarget(self, action: #selector(SSwitch.valueDidChange), for:UIControl.Event.valueChanged)
     }
     
     deinit {

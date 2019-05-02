@@ -24,7 +24,7 @@ open class Stream<T>
      - Parameter T: The type of the values that would be fired by the stream if it did fire values.
      - Returns: A stream that never fires.
     */
-    open static func never() -> Stream<T> { return Stream<T>() }
+    public static func never() -> Stream<T> { return Stream<T>() }
 
     deinit {
         if let r = self.refs { r.release() }

@@ -15,7 +15,7 @@ extension UIViewController {
     public func showError(_ title: String, err: String, onOK: Block? = nil) {
         let alert = UIAlertController(title: title,
                                       message: err,
-                                      preferredStyle: UIAlertControllerStyle.alert)
+                                      preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in onOK?() })
         

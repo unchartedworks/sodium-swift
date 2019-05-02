@@ -20,7 +20,7 @@ open class SSearchBar: UISearchBar, UISearchBarDelegate {
     
     weak var userChanges: SodiumSwift.Stream<String>?
     fileprivate var l: Listener?
-    open let tap: StreamSink<SodiumSwift.Unit>
+    public let tap: StreamSink<SodiumSwift.Unit>
     
     open var cText = Cell<String>(value: String()) {
         didSet{

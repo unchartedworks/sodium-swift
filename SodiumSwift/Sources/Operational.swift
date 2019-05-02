@@ -8,7 +8,7 @@ open class Operational
      - Returns:
      - Remarks: This is an **OPERATIONAL** primitive, which is not part of the main Sodium API.  It breaks the property of non-detectability of cell steps/updates.  The rule with this primitive is that you should only use it in functions that do not allow the caller to detect the cell updates.
      */
-    open static func updates<C:CellType>(_ c: C) -> Stream<C.Element> {
+    public static func updates<C:CellType>(_ c: C) -> Stream<C.Element> {
         return c.stream()
     }
 
@@ -20,7 +20,7 @@ open class Operational
      - Returns:
      - Remarks: This is an **OPERATIONAL** primitive, which is not part of the main Sodium API.  It breaks the property of non-detectability of cell steps/updates.  The rule with this primitive is that you should only use it in functions that do not allow the caller to detect the cell updates.
      */
-    open static func value<C:CellType>(_ c: C) -> Stream<C.Element> {
+    public static func value<C:CellType>(_ c: C) -> Stream<C.Element> {
         return Transaction.apply(c.value)
     }
 

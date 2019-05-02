@@ -13,7 +13,7 @@ open class CellLoop<T> : LazyCell<T>
     init(streamLoop: StreamLoop<T>, initialValue: @autoclosure @escaping () -> T)
     {
         self.streamLoop = streamLoop
-        super.init(stream: streamLoop, initialValue: initialValue)
+        super.init(stream: streamLoop, initialValue: initialValue())
     }
 
     /**

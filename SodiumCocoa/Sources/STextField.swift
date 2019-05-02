@@ -69,7 +69,7 @@ open class STextField : UITextField {
         self.text = text
         
         // Add a "textFieldDidChange" notification method to the text field control.
-        self.addTarget(self, action: #selector(STextField.textFieldDidChange), for:UIControlEvents.editingChanged)
+        self.addTarget(self, action: #selector(STextField.textFieldDidChange), for:UIControl.Event.editingChanged)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -82,7 +82,7 @@ open class STextField : UITextField {
         self.l              = self.listen()
 
         // Add a "textFieldDidChange" notification method to the text field control.
-        self.addTarget(self, action: #selector(STextField.textFieldDidChange), for:UIControlEvents.editingChanged)
+        self.addTarget(self, action: #selector(STextField.textFieldDidChange), for:UIControl.Event.editingChanged)
     }
 
     deinit {
@@ -100,7 +100,7 @@ open class STextField : UITextField {
         self.pathLayer.strokeColor = UIColor.clear.cgColor
         self.pathLayer.fillColor = nil
         self.pathLayer.lineWidth = 2.0 * UIScreen.main.scale
-        self.pathLayer.lineJoin = kCALineJoinBevel
+        self.pathLayer.lineJoin = CAShapeLayerLineJoin.bevel
         self.pathLayer.strokeEnd = 1.0
         
         //Add the layer to your view's layer

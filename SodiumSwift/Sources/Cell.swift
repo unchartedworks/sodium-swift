@@ -72,7 +72,7 @@ open class CellBase<T> : CellType {
  
         - Returns: A cell with a constant value.
      */
-    open static func constant<T>(_ value: T, refs: MemReferences? = nil) -> Cell<T> {
+    public static func constant<T>(_ value: T, refs: MemReferences? = nil) -> Cell<T> {
         return Cell<T>(value: value, refs: refs)
     }
     
@@ -84,7 +84,7 @@ open class CellBase<T> : CellType {
  
         - Returns: A cell with a lazily computed constant value.
     */
-    open static func constantLazy<TResult>( _ value: @autoclosure @escaping () -> TResult) -> AnyCell<TResult>
+    public static func constantLazy<TResult>( _ value: @autoclosure @escaping () -> TResult) -> AnyCell<TResult>
     {
         return Stream<TResult>.never().holdLazy(value)
     }
